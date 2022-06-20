@@ -1,2 +1,2 @@
-#TargetFrameworkVersion=v4.0:PlatformToolSet=v120:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit
-Debug|Win32|C:\Users\CRiedel\Documents\Visual Studio 2013\Projects\Rechner 1.0\|
+PlatformToolSet=v143:VCToolArchitecture=Native32Bit:VCToolsVersion=14.32.31326:TargetPlatformVersion=10.0.19041.0:
+Debug|Win32|D:\Programming\cpractice\cpractice\Project\Rechner 1.0\|
