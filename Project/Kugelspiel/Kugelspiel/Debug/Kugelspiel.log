@@ -1,0 +1,11 @@
+﻿Der Buildvorgang wurde am 25.09.2019 12:53:13 gestartet.
+     1>Projekt "c:\Users\CRiedel\documents\visual studio 2013\Projects\Kugelspiel\Kugelspiel\Kugelspiel.vcxproj" auf Knoten "2", Build Ziel(e).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Kugelspiel.cpp
+         Kugelspiel.cpp
+     1>c:\users\criedel\documents\visual studio 2013\projects\kugelspiel\kugelspiel\kugelspiel.cpp(12): error C2106: '=': Linker Operand muss ein L-Wert sein
+     1>Die Erstellung des Projekts "c:\Users\CRiedel\documents\visual studio 2013\Projects\Kugelspiel\Kugelspiel\Kugelspiel.vcxproj" ist abgeschlossen, Build Ziel(e) -- FEHLER.
+
+Fehler beim Buildvorgang.
+
+Verstrichene Zeit 00:00:00.54

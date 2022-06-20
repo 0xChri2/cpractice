@@ -1,0 +1,8 @@
+﻿Der Buildvorgang wurde am 11.10.2019 12:08:44 gestartet.
+     1>Projekt "C:\Users\CRiedel\Documents\Visual Studio 2013\Projects\Zinsrechnung\Zinsrechnung\Zinsrechnung.vcxproj" auf Knoten "2", Build Ziel(e).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.Cpp.Platform.targets(64,5): error MSB8020: The build tools for v141 (Platform Toolset = 'v141') cannot be found. To build using the v141 build tools, please install v141 build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting "Upgrade Solution...".
+     1>Die Erstellung des Projekts "C:\Users\CRiedel\Documents\Visual Studio 2013\Projects\Zinsrechnung\Zinsrechnung\Zinsrechnung.vcxproj" ist abgeschlossen, Build Ziel(e) -- FEHLER.
+
+Fehler beim Buildvorgang.
+
+Verstrichene Zeit 00:00:00.07
