@@ -1,0 +1,3 @@
+/Users/christophriedel/Programming/cpractice/studies/tempcalc/cmake-build-debug/CMakeFiles/tempcalc.dir
+/Users/christophriedel/Programming/cpractice/studies/tempcalc/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/christophriedel/Programming/cpractice/studies/tempcalc/cmake-build-debug/CMakeFiles/rebuild_cache.dir
