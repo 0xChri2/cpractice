@@ -64,17 +64,25 @@ int main() {
         printf("[Tag %d: %.1f]\n", i, t);
 
         // compute minimum and maximum temperature
-        if (t < t_max) {
-            t_max = t;
+        if (t < t_min) {
+            t_min = t;
             day_min = i;
         }
-        if (t > t_min) {
-            t_min = t;
+        if (t > t_max) {
+            t_max = t;
             day_max = i;
         }
         //average
         t_mean = t_mean + measurement[i-1];
 
+        if(t >= 25)
+        {
+            nr_hot_days = nr_cold_days + 1;
+        }
+        if(t <= 0)
+        {
+            nr_cold_days =  nr_cold_days + 1;
+        }
     }
 
     //avarage
