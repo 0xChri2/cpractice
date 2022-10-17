@@ -47,14 +47,14 @@ int main() {
     int nr_hot_days;
     // number of cold days
     int nr_cold_days;
-
+    int countcold = 0;
     // first hot day (temperature > 25.0)
-    int last_hot_day;
+    int last_hot_day = 0;
     // kast hot day (temperature > 25.0)
-    int first_hot_day;
+    int first_hot_day = 0;
 
     // maximum duration of cold days in sequence
-    int max_cold_period;
+    int max_cold_period = 0;
 
     for (int i=1; i<=365; i++) {
         // read temperature data from array
@@ -69,20 +69,38 @@ int main() {
             day_min = i;
         }
         if (t > t_max) {
+
             t_max = t;
             day_max = i;
         }
+
         //average
         t_mean = t_mean + measurement[i-1];
 
         if(t >= 25)
         {
+            if(first_hot_day == 0)
+            {
+                first_hot_day = i;
+            }
             nr_hot_days = nr_cold_days + 1;
+            last_hot_day = i;
         }
         if(t <= 0)
         {
             nr_cold_days =  nr_cold_days + 1;
+            countcold++;
         }
+        else
+        {
+            if(countcold > max_cold_period)
+            {
+                max_cold_period = countcold;
+            }
+            countcold = 0;
+        }
+
+
     }
 
     //avarage
