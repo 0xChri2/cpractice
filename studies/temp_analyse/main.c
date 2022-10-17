@@ -32,6 +32,10 @@ int main() {
 
     // temperature of current day
     double t;
+    //week count
+    int countweek = 0;
+    int week = 0;
+    double t_week = 0;
     // minimum temperature
     double t_min;
     // day when minimum temperature is measured
@@ -60,8 +64,20 @@ int main() {
         // read temperature data from array
         t = measurement[i-1];
 
+        //week output and compute
+        countweek = countweek +1;
+        t_week = t + t_week;
+        if(countweek == 7)
+        {
+            week = week + 1;
+            countweek = 0;
+            t_week = t_week / 7;
+            t_week = 0;
+            printf("[Woche %d: %.1f]\n", week, t);
+        }
+
         // compute temperature of the week
-        printf("[Tag %d: %.1f]\n", i, t);
+        //printf("[Tag %d: %.1f]\n", i, t);
 
         // compute minimum and maximum temperature
         if (t < t_min) {
