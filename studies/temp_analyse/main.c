@@ -36,16 +36,27 @@ int main() {
     int countweek = 0;
     int week = 0;
     double t_week = 0;
+
+    int countmonth = 0;
+    int month = 0;
+    double t_month = 0;
+
+    int k = 0;
+    int t_count = 0;
+    int months[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30,31, 30, 31};
+
     // minimum temperature
-    double t_min;
+    double t_min = measurement[0];
     // day when minimum temperature is measured
     int day_min;
     // maximum temperature
-    double t_max;
+    double t_max = measurement[0];
     // day when maximum temperature is measured
     int day_max;
     // average temperature
     double t_mean;
+    int underavarage = 0;
+    int overavarage = 0;
 
     // number of hot days
     int nr_hot_days;
@@ -63,7 +74,16 @@ int main() {
     for (int i=1; i<=365; i++) {
         // read temperature data from array
         t = measurement[i-1];
+        t_count = t_count +1;
+        t_month = t + t_month;
+        if(t_count > months[k])
+        {
+            t_count = 0;
+            t_month = t_month / months[k];
+            k++;
+            printf("[Monat %d: %.1f]\n", k, t_month);
 
+        }
         //week output and compute
         countweek = countweek +1;
         t_week = t + t_week;
@@ -73,7 +93,7 @@ int main() {
             countweek = 0;
             t_week = t_week / 7;
             t_week = 0;
-            printf("[Woche %d: %.1f]\n", week, t);
+            //printf("[Woche %d: %.1f]\n", week, t);
         }
 
         // compute temperature of the week
@@ -121,13 +141,26 @@ int main() {
 
     //avarage
     t_mean = t_mean / 365;
-
+    for (int i=1; i<=365; i++)
+    {
+        t = measurement[i-1];
+        if(t_mean > t)
+        {
+            underavarage++;
+        }
+        if(t_mean < t)
+        {
+            overavarage++;
+        }
+    }
     // output results
     printf("\nErgebnisse:\n");
     printf("-----------\n\n");
     printf("Maximal______: %5.1f (an Tag %d)\n", t_max, day_max);
     printf("Minimal______: %5.1f (an Tag %d)\n", t_min, day_min);
     printf("Durchschnitt_: %5.1f\n", t_mean);
+    printf("Anzahl der Tage unter dem Durchschnitt_: %d\n", underavarage);
+    printf("Anzahl der Tage über dem Durchschnitt_: %d\n", overavarage);
     printf("Kalte Tage___: %5.1d (laengste Folge: %d)\n", nr_cold_days, max_cold_period);
     printf("Heisse Tage__: %5.1d (erster: Tag %d, letzter: Tag %d)\n", nr_hot_days, first_hot_day, last_hot_day);
 
