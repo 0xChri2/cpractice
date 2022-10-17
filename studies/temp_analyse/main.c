@@ -66,9 +66,11 @@ int main() {
         // compute minimum and maximum temperature
         if (t < t_max) {
             t_max = t;
+            day_min = i;
         }
         if (t > t_min) {
             t_min = t;
+            day_max = i;
         }
     }
 
