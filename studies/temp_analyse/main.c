@@ -72,7 +72,13 @@ int main() {
             t_min = t;
             day_max = i;
         }
+        //average
+        t_mean = t_mean + measurement[i-1];
+
     }
+
+    //avarage
+    t_mean = t_mean / 365;
 
     // output results
     printf("\nErgebnisse:\n");
