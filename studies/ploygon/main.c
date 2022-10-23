@@ -1,0 +1,60 @@
+#include <stdio.h>
+#include <math.h>
+
+// maximum number of points
+#define MAX_POINTS 100
+
+int main( void ) {
+
+    // --- print program header
+    printf("Programm zur Berechnung von Polygonen\n");
+    printf("-------------------------------------\n");
+
+    // --- read points from input
+    int n;
+    double x[MAX_POINTS];
+    double y[MAX_POINTS];
+
+    printf("Wieviel Punkte hat das Polygon? ");
+    scanf("%d", &n);
+    printf("%d\n", n);
+
+    for(int i=0; i < n; i++) {
+        printf("Punkt %d im Format x/y? ", i);
+        scanf("%lf/%lf", &x[i], &y[i]);
+        printf("%.2lf/%.2lf\n", x[i], y[i]);
+    }
+
+    // --- edges and circumference
+    double circumference = 0.0;
+
+    // TODO
+
+    // --- compute the area
+    double area = 0.0;
+
+    // TODO
+
+    // --- compute the centroid
+    double x_centroid = 0.0;
+    double y_centroid = 0.0;
+
+    // TODO
+
+    // --- check whether centroid is inside
+    unsigned inside = 0;
+
+    // TODO
+
+    // --- output results
+    printf("\nErgebnisse:\n");
+    printf("-----------\n");
+    printf("Anzahl Eckpunkte: %d\n", n);
+    printf("Umfang: %.2lf\n", circumference);
+    printf("Flaecheninhalt: %.2lf\n", area);
+    printf("Schwerpunkt: %.2lf/%.2lf\n", x_centroid, y_centroid);
+    printf("Schwerpunkt drinnen? %d\n",inside);
+
+    return 0;
+}
+
