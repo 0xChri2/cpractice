@@ -39,6 +39,7 @@ int main( void ) {
     double x_centroid = 0.0;
     double y_centroid = 0.0;
 
+
     // TODO
 
     // --- check whether centroid is inside
@@ -68,7 +69,22 @@ int main( void ) {
         area += (y[i] + y[j]) * (x[i] - x[j]);
         printf("Kante %i von %.2lf/%.2lf nach %.2lf/%.2lf mit Laenge %.2lf\n", i, x[i], y[i], x[j], y[j], lenght);
     }
-    //area *= 0.5;
+    area *= 0.5;
+
+    for (int i = 0; i < n; ++i)
+    {
+        int j = i +1;
+        if(j == n)
+        {
+            j = 0;
+        }
+        x_centroid += (x[i] + x[j]) * (x[i] * y[j] - x[j] * y[i]);
+        y_centroid += (y[i] + y[j]) * (x[i] * y[j] - x[j] * y[i]);
+    }
+    double sechs = 6.0;
+    x_centroid *= 1/(sechs * area);
+    y_centroid *= 1/(sechs * area);
+
     printf("Umfang: %.2lf\n", circumference);
     printf("Flaecheninhalt: %.2lf\n", area);
     printf("Schwerpunkt: %.2lf/%.2lf\n", x_centroid, y_centroid);
