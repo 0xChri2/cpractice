@@ -4,6 +4,17 @@
 // maximum number of points
 #define MAX_POINTS 100
 
+int pnpoly(int nvert, float *vertx, float *verty, float testx, float testy)
+{
+    int i, j, c = 0;
+    for (i = 0, j = nvert-1; i < nvert; j = i++) {
+        if ( ((verty[i]>testy) != (verty[j]>testy)) &&
+             (testx < (vertx[j]-vertx[i]) * (testy-verty[i]) / (verty[j]-verty[i]) + vertx[i]) )
+            c = !c;
+    }
+    return c;
+}
+
 int main( void ) {
 
     // --- print program header
@@ -84,7 +95,7 @@ int main( void ) {
     double sechs = 6.0;
     x_centroid *= 1/(sechs * area);
     y_centroid *= 1/(sechs * area);
-
+    inside = pnpoly(n,&x,&y, x_centroid, y_centroid);
     printf("Umfang: %.2lf\n", circumference);
     printf("Flaecheninhalt: %.2lf\n", area);
     printf("Schwerpunkt: %.2lf/%.2lf\n", x_centroid, y_centroid);
