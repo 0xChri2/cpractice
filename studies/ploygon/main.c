@@ -50,6 +50,25 @@ int main( void ) {
     printf("\nErgebnisse:\n");
     printf("-----------\n");
     printf("Anzahl Eckpunkte: %d\n", n);
+
+    // Kanten
+    for (int i = 0; i < n; ++i)
+    {
+
+        int j = i +1;
+        if(j == n)
+        {
+            j = 0;
+        }
+        double lenght = sqrt(pow(x[i] - x[j], 2) + pow(y[i] - y[j],2));
+
+        //circumference
+        circumference += lenght;
+
+        area += (y[i] + y[j]) * (x[i] - x[j]);
+        printf("Kante %i von %.2lf/%.2lf nach %.2lf/%.2lf mit Laenge %.2lf\n", i, x[i], y[i], x[j], y[j], lenght);
+    }
+    //area *= 0.5;
     printf("Umfang: %.2lf\n", circumference);
     printf("Flaecheninhalt: %.2lf\n", area);
     printf("Schwerpunkt: %.2lf/%.2lf\n", x_centroid, y_centroid);
