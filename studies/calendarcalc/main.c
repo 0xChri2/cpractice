@@ -25,7 +25,15 @@ unsigned isLeapYear (unsigned year) {
  * */
 unsigned isValidDate (unsigned daysInMonth [], unsigned day, unsigned month ) {
     // *** TODO ***
-    return 1;
+    unsigned error = 0;
+    if(daysInMonth[month] > day){
+        error = 1;
+    }
+    if(month < 0 || month > 12)
+    {
+        error = 1;
+    }
+    return error;
 }
 
 
