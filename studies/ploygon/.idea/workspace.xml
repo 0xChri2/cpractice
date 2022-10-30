@@ -44,17 +44,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "F:/Programming/cpractice/studies/ploygon"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Programming/cpractice/studies/ploygon&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="ploygon" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="true" REDIRECT_INPUT_PATH="$PROJECT_DIR$/test-01.dat" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ploygon" TARGET_NAME="ploygon" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ploygon" RUN_TARGET_NAME="ploygon">
       <method v="2">
@@ -73,7 +73,8 @@
       <workItem from="1666556341058" duration="782000" />
       <workItem from="1666613384293" duration="7666000" />
       <workItem from="1666626989234" duration="563000" />
-      <workItem from="1666627567072" duration="70000" />
+      <workItem from="1666627567072" duration="248000" />
+      <workItem from="1667137005261" duration="109000" />
     </task>
     <servers />
   </component>
