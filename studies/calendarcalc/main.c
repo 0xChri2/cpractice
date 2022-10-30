@@ -7,7 +7,12 @@
  */
 unsigned isLeapYear (unsigned year) {
     // *** TODO ***
-    return 0;
+    if(year % 4){
+        return 0;
+    }
+    else{
+        return 1;
+    }
 }
 
 
@@ -45,7 +50,17 @@ void printWeekday(unsigned weekday) {
  */
 unsigned determineDayInYear(unsigned daysInMonth [], unsigned day, unsigned month ) {
     // *** TODO ***
-    return 0;
+    unsigned DayInYear = 0;
+    for(int i = 0; i<= month;i++) {
+        if(i < month) {
+            DayInYear = DayInYear + daysInMonth[i];
+        }
+        else if (i == month) {
+            DayInYear = DayInYear + day;
+        }
+
+    }
+    return DayInYear;
 }
 
 
@@ -54,7 +69,7 @@ unsigned determineDayInYear(unsigned daysInMonth [], unsigned day, unsigned mont
  * @param year
  * @return 1=Monday, 2=Tuesday, ... 0 or 7=Sunday
  */
-unsigned determineWeekdayOfJan01 (unsigned year) {
+unsigned determineWeekdayOfJan01(unsigned year) {
     return (2 + (year - 1901) + ((year - 1901)/4)) % 7;
 }
 
@@ -126,7 +141,8 @@ int main(void) {
         printf("Das Jahr %u in KEIN Schaltjahr.\n", year);
 
     // determine the weekday of the 1 Jan
-    unsigned weekday1Jan = determineWeekdayOfFirstDay(year);
+    //unsigned weekday1Jan = determineWeekdayOfFirstDay(year);
+    unsigned weekday1Jan = determineWeekdayOfJan01(year);
     printf("Der 01. Januar %04u ist ein ", year);
     printWeekday(weekday1Jan);
     printf("\n");
