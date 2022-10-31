@@ -26,10 +26,10 @@ unsigned isLeapYear (unsigned year) {
 unsigned isValidDate (unsigned daysInMonth [], unsigned day, unsigned month ) {
     // *** TODO ***
     unsigned error = 0;
-    if(daysInMonth[month] > day){
+    if(daysInMonth[month] >= day){
         error = 1;
     }
-    if(month < 0 || month > 12)
+    if(month < 0 || month >= 12)
     {
         error = 1;
     }
@@ -48,19 +48,26 @@ int printWeekday(unsigned weekday) {
     // *** TODO ***
     switch (weekday) {
         case 1:
-            printf("Monday");
+            printf("Montag");
+            break;
         case 2:
-            printf("Tuesday");
+            printf("Dienstag");
+            break;
         case 3:
-            printf("Wednesday");
+            printf("Mittwoch");
+            break;
         case 4:
-            printf("Thursday");
+            printf("Donnerstag");
+            break;
         case 5:
-            printf("Friday");
+            printf("Freitag");
+            break;
         case 6:
-            printf("Saturday");
+            printf("Samstag");
+            break;
         case 7:
-            printf("Sunday");
+            printf("Samstag");
+            break;
 
     }
 
@@ -110,7 +117,10 @@ unsigned determineWeekdayOfJan01(unsigned year) {
 
 unsigned determineWeekday( unsigned daysInMonth[], unsigned firstWeekday, unsigned day, unsigned month ) {
     // *** TODO ***
-    return 0;
+    unsigned weekday = 0;
+    unsigned DayInYear = determineDayInYear(daysInMonth, day, month);
+    weekday = (firstWeekday + DayInYear - 1) % 7;
+    return weekday;
 }
 
 
@@ -122,7 +132,8 @@ unsigned determineWeekday( unsigned daysInMonth[], unsigned firstWeekday, unsign
  */
 unsigned determineCalenderWeek (unsigned day_in_year, unsigned weekday_1jan ) {
     // *** TODO ***
-    return 0;
+    int calenderweek = (day_in_year / 7) + 1;
+    return calenderweek;
 }
 
 
