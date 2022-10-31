@@ -66,9 +66,11 @@ int printWeekday(unsigned weekday) {
             printf("Samstag");
             break;
         case 7:
-            printf("Samstag");
+            printf("Sonntag");
             break;
-
+        case 0:
+            printf("Sonntag");
+            break;
     }
 
 }
