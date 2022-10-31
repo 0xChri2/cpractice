@@ -1,0 +1,3 @@
+/Users/christophriedel/Programming/cpractice/studies/matrix-multiplikator/cmake-build-debug/CMakeFiles/matrix_multiplikator.dir
+/Users/christophriedel/Programming/cpractice/studies/matrix-multiplikator/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/christophriedel/Programming/cpractice/studies/matrix-multiplikator/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -8,7 +8,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: calendarcalc
+# Project: matrix_multiplikator
 # Configurations: Debug
 # =============================================================================
 
@@ -36,47 +36,47 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/christophriedel/Programming/cpractice/studies/calendarcalc/cmake-build-debug/
+cmake_ninja_workdir = /Users/christophriedel/Programming/cpractice/studies/matrix-multiplikator/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target calendarcalc
+# Object build statements for EXECUTABLE target matrix_multiplikator
 
 
 #############################################
-# Order-only phony target for calendarcalc
+# Order-only phony target for matrix_multiplikator
 
-build cmake_object_order_depends_target_calendarcalc: phony || CMakeFiles/calendarcalc.dir
+build cmake_object_order_depends_target_matrix_multiplikator: phony || CMakeFiles/matrix_multiplikator.dir
 
-build CMakeFiles/calendarcalc.dir/main.c.o: C_COMPILER__calendarcalc_Debug /Users/christophriedel/Programming/cpractice/studies/calendarcalc/main.c || cmake_object_order_depends_target_calendarcalc
-  DEP_FILE = CMakeFiles/calendarcalc.dir/main.c.o.d
+build CMakeFiles/matrix_multiplikator.dir/main.c.o: C_COMPILER__matrix_multiplikator_Debug /Users/christophriedel/Programming/cpractice/studies/matrix-multiplikator/main.c || cmake_object_order_depends_target_matrix_multiplikator
+  DEP_FILE = CMakeFiles/matrix_multiplikator.dir/main.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99
-  OBJECT_DIR = CMakeFiles/calendarcalc.dir
-  OBJECT_FILE_DIR = CMakeFiles/calendarcalc.dir
-  TARGET_COMPILE_PDB = CMakeFiles/calendarcalc.dir/
-  TARGET_PDB = calendarcalc.pdb
+  OBJECT_DIR = CMakeFiles/matrix_multiplikator.dir
+  OBJECT_FILE_DIR = CMakeFiles/matrix_multiplikator.dir
+  TARGET_COMPILE_PDB = CMakeFiles/matrix_multiplikator.dir/
+  TARGET_PDB = matrix_multiplikator.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target calendarcalc
+# Link build statements for EXECUTABLE target matrix_multiplikator
 
 
 #############################################
-# Link the executable calendarcalc
+# Link the executable matrix_multiplikator
 
-build calendarcalc: C_EXECUTABLE_LINKER__calendarcalc_Debug CMakeFiles/calendarcalc.dir/main.c.o
+build matrix_multiplikator: C_EXECUTABLE_LINKER__matrix_multiplikator_Debug CMakeFiles/matrix_multiplikator.dir/main.c.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
-  OBJECT_DIR = CMakeFiles/calendarcalc.dir
+  OBJECT_DIR = CMakeFiles/matrix_multiplikator.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/calendarcalc.dir/
-  TARGET_FILE = calendarcalc
-  TARGET_PDB = calendarcalc.pdb
+  TARGET_COMPILE_PDB = CMakeFiles/matrix_multiplikator.dir/
+  TARGET_FILE = matrix_multiplikator
+  TARGET_PDB = matrix_multiplikator.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/christophriedel/Programming/cpractice/studies/calendarcalc/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/christophriedel/Programming/cpractice/studies/matrix-multiplikator/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -87,7 +87,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/christophriedel/Programming/cpractice/studies/calendarcalc/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/christophriedel/Programming/cpractice/studies/calendarcalc -B/Users/christophriedel/Programming/cpractice/studies/calendarcalc/cmake-build-debug
+  COMMAND = cd /Users/christophriedel/Programming/cpractice/studies/matrix-multiplikator/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/christophriedel/Programming/cpractice/studies/matrix-multiplikator -B/Users/christophriedel/Programming/cpractice/studies/matrix-multiplikator/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -103,9 +103,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /Users/christophriedel/Programming/cpractice/studies/calendarcalc/cmake-build-debug
+# Folder: /Users/christophriedel/Programming/cpractice/studies/matrix-multiplikator/cmake-build-debug
 
-build all: phony calendarcalc
+build all: phony matrix_multiplikator
 
 # =============================================================================
 # Built-in targets

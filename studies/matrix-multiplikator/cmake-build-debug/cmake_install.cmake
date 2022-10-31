@@ -1,4 +1,4 @@
-# Install script for directory: /Users/christophriedel/Programming/cpractice/studies/calendarcalc
+# Install script for directory: /Users/christophriedel/Programming/cpractice/studies/matrix-multiplikator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/christophriedel/Programming/cpractice/studies/calendarcalc/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/christophriedel/Programming/cpractice/studies/matrix-multiplikator/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

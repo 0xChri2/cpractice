@@ -1,0 +1,25 @@
+# ninja log v5
+0	35	1667210874816177878	CMakeFiles/matrix_multiplikator.dir/main.c.o	4ab21e343250754b
+36	67	1667210874848577459	matrix_multiplikator	5c61d68716b84aa8
+0	53	1667212375670240354	CMakeFiles/matrix_multiplikator.dir/main.c.o	4ab21e343250754b
+53	100	1667212375718132552	matrix_multiplikator	5c61d68716b84aa8
+0	133	1667212514829122910	CMakeFiles/matrix_multiplikator.dir/main.c.o	4ab21e343250754b
+133	173	1667212514869953723	matrix_multiplikator	5c61d68716b84aa8
+1	28	1667212526026876463	CMakeFiles/matrix_multiplikator.dir/main.c.o	4ab21e343250754b
+28	62	1667212526061315246	matrix_multiplikator	5c61d68716b84aa8
+0	132	1667212792403409966	CMakeFiles/matrix_multiplikator.dir/main.c.o	4ab21e343250754b
+132	173	1667212792445222334	matrix_multiplikator	5c61d68716b84aa8
+0	134	1667212898051202516	CMakeFiles/matrix_multiplikator.dir/main.c.o	4ab21e343250754b
+135	176	1667212898093630576	matrix_multiplikator	5c61d68716b84aa8
+0	126	1667212958961384565	CMakeFiles/matrix_multiplikator.dir/main.c.o	4ab21e343250754b
+126	167	1667212959003254057	matrix_multiplikator	5c61d68716b84aa8
+0	169	1667213687742923333	CMakeFiles/matrix_multiplikator.dir/main.c.o	4ab21e343250754b
+169	212	1667213687787700918	matrix_multiplikator	5c61d68716b84aa8
+0	158	1667213939928937097	CMakeFiles/matrix_multiplikator.dir/main.c.o	4ab21e343250754b
+158	202	1667213939973762056	matrix_multiplikator	5c61d68716b84aa8
+1	132	1667214014117175315	CMakeFiles/matrix_multiplikator.dir/main.c.o	4ab21e343250754b
+133	172	1667214014157675025	matrix_multiplikator	5c61d68716b84aa8
+0	129	1667214124380654152	CMakeFiles/matrix_multiplikator.dir/main.c.o	4ab21e343250754b
+130	169	1667214124421254901	matrix_multiplikator	5c61d68716b84aa8
+1	128	1667214165543248490	CMakeFiles/matrix_multiplikator.dir/main.c.o	4ab21e343250754b
+128	168	1667214165583525329	matrix_multiplikator	5c61d68716b84aa8
