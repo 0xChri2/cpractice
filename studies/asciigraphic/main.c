@@ -30,27 +30,55 @@ void update_screen()
 /* checks whether a given point (x,y) is within the screen */
 unsigned in_screen(int x, int y) {
     // TODO
+    if(screen[x][y] > screen[NUM_COLUMNS][NUM_ROWS])
+    {
+
+        return 1;
+    }
+    else
+    {
+
+    }
     return 0;
 }
 
 /* draw a single point at given position (x,y) and with given character */
 void draw_pixel(int x, int y, char c) {
     // TODO
+    putchar(screen[x][y] = c);
 }
 
 /* clear a single pixel at position (x,y) */
 void clear_pixel(int x, int y) {
     // TODO
+    putchar(screen[x][y] = ' ');
 }
 
 /* draw a horizontal line (x1,y)-(x2,y) with dashes (-) */
 void draw_horizontal_line(int x1, int x2, int y) {
     // TODO
+    //if(x1 < x2){
+        for(int i = x1; i <=x2;i++)
+        {
+            putchar(screen[i][y] = '-');
+        }
+   // }
+   // else{
+      //  for(int i = x1; i >=x2;i++)
+    //    {
+    //        putchar(screen[i][y] = '-');
+    //    }
+   // }
 }
 
 /* draw a vertical line (x,y1)-(x,y2) with vertical bars (|) */
 void draw_vertical_line(int x, int y1, int y2) {
     // TODO
+    for(int i = y1; i <=y2;i++)
+    {
+        putchar(screen[x][i] = '|');
+        putchar('\n');
+    }
 }
 
 /* draw a horizontal arrow (x1,y)-(x2,y) */
@@ -83,6 +111,13 @@ void draw_filled_rectangle(int x1, int y1, int x2, int y2, char c) {
 /* draw a general line (x1,y1)-(x2,y2) with character c */
 void draw_line(int x1, int y1, int x2, int y2, char c) {
     // TODO
+    for(int i = x1; i <= x2; i++)
+    {
+        for(int j = y1; j <= y2;j++)
+        {
+            putchar(screen[i][j] = c);
+        }
+    }
 }
 
 /* flood fill an area starting at given position with character c */
