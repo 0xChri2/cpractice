@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /* screen size - adapt to console size */
-#define NUM_COLUMNS 80
+#define NUM_COLUMNS 85
 #define NUM_ROWS 25
 
 /* screen buffer */
