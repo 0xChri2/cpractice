@@ -25,12 +25,30 @@ int read_decade() {
 
 double compute_tolerance( int e ) {
     // TODO
-    return 0.0;
+    switch (e) {
+        case 6:
+            return 0.20;
+        case 12:
+            return 0.10;
+        case 24:
+            return 0.05;
+        case 48:
+            return 0.02;
+        case 96:
+            return 0.01;
+        case 192:
+            return 0.005;
+    }
 }
 
 
 void compute_set_values( int e_series, int decade, double table[] ) {
     // TODO
+    double j = 0;
+    for(int i = 0; i< e_series;i++ ) {
+        table[i] = pow(10, j / e_series) * pow(10, decade);
+        j++;
+    }
 }
 
 
@@ -56,7 +74,7 @@ int main() {
     // gebe alle Werte mit Kodierung und Toleranzen aus
     for (int i = 0; i < e_series; i++) {
         // TODO
-        double set_value = 0.0;
+        double set_value = table[i];
         double lower_bound = 0.0;
         double upper_bound = 0.0;
         printf("%.2lf ", set_value);
