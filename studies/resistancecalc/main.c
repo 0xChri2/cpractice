@@ -74,6 +74,7 @@ void print_encoding( int e_series, double set_value, double tolerance) {
 
     }
         printf("\n");
+
 }
 
 
