@@ -52,28 +52,28 @@ void compute_set_values( int e_series, int decade, double table[] ) {
     }
 }
 
+//ascii2dec
+int a2d(char c) {
+    return c - '0';
+}
 
 void print_encoding( int e_series, double set_value, double tolerance) {
     // TODO
     const char* band[10] = {"schwarz", "Braun", "Rot", "Orange", "Gelb", "Gruen", "Blau", "Lila", "Grau", "Weiss"};
-    char zahlen[10];
+    char zahlen[255];
     sprintf(zahlen, "%lf", set_value);
     for (int i = 0; i <= 4; i++) {
-        int test = (int)zahlen[i];
-        printf("%s",band[test]);
+        int buffer = (int)(zahlen[i] - '0');
 
-       }
+        if(i == 4)
+            printf("%i", (e_series * 100));
+        if(i == 3)
+            //multiplikator ausgabe
+        else
+            printf("%s-", band[buffer]);
+
+    }
         printf("\n");
-
-
-
-
-
-
-    /*printf("-");
-    printf("-");
-    printf("-");
-    printf("-");*/
 }
 
 
