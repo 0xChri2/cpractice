@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "F:/Programming/cpractice/studies/resistancecalc/main.c" "CMakeFiles/Resistor.dir/main.c.obj" "gcc" "CMakeFiles/Resistor.dir/main.c.obj.d"
+  "/Users/christophriedel/Programming/cpractice/studies/resistancecalc/main.c" "CMakeFiles/Resistor.dir/main.c.o" "gcc" "CMakeFiles/Resistor.dir/main.c.o.d"
   )
 
 # Targets to which this target links.

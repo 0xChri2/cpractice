@@ -1,6 +1,7 @@
 
 #include <stdio.h>
 #include <math.h>
+#include <string.h>
 
 
 int read_e_series() {
@@ -52,12 +53,27 @@ void compute_set_values( int e_series, int decade, double table[] ) {
 }
 
 
-void print_encoding( int e_series, double set_value, double tolerance ) {
+void print_encoding( int e_series, double set_value, double tolerance) {
     // TODO
+    const char* band[10] = {"schwarz", "Braun", "Rot", "Orange", "Gelb", "Gruen", "Blau", "Lila", "Grau", "Weiss"};
+    char zahlen[10];
+    sprintf(zahlen, "%lf", set_value);
+    for (int i = 0; i <= 4; i++) {
+        int test = (int)zahlen[i];
+        printf("%s",band[test]);
+
+       }
+        printf("\n");
+
+
+
+
+
+
+    /*printf("-");
     printf("-");
     printf("-");
-    printf("-");
-    printf("-");
+    printf("-");*/
 }
 
 
