@@ -56,7 +56,7 @@ void compute_set_values( int e_series, int decade, double table[] ) {
 void print_encoding( int e_series, double set_value, double tolerance) {
     // TODO
     const char* band[10] = {"schwarz", "Braun", "Rot", "Orange", "Gelb", "Gruen", "Blau", "Lila", "Grau", "Weiss"};
-    char zahlen[10];
+    char zahlen[200];
     sprintf(zahlen, "%lf", set_value);
     for (int i = 0; i <= 4; i++) {
         int test = (int)zahlen[i];
@@ -64,10 +64,6 @@ void print_encoding( int e_series, double set_value, double tolerance) {
 
        }
         printf("\n");
-
-
-
-
 
 
     /*printf("-");
