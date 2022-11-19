@@ -15,13 +15,15 @@ const complex_t complex_1 = {1,0};
 /** constant i (often called j in electrical engineering) */
 const complex_t complex_j = {0,1};
 
-void complex_print( complex_t *c ) {
+//dont know if const is right right here
+void complex_print(const complex_t *c ) {
     printf("%lf + %lf*j\n", c->real, c->imag );
 }
 
 /**
  * Computes the absolute value of a complex number (distance to origin in complex plane).
  * @param c complex number
+ * @return absolute value of given complex number
  * @return absolute value of given complex number
  */
 double complex_abs( complex_t *c ) {
@@ -38,6 +40,7 @@ double complex_abs( complex_t *c ) {
  */
 void complex_add( complex_t *c0, complex_t *c1, complex_t *c2 ) {
     // TODO
+
 }
 
 
