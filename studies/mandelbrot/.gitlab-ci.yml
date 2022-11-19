@@ -1,0 +1,10 @@
+image: registry.ide3.de/docker/gcc-cmake
+
+build:
+
+  script:
+    - date
+    - cmake .
+    - cmake --build .
+    - ls -al
+    - ./Mandelbrot
