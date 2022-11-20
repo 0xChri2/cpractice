@@ -28,7 +28,7 @@ void complex_print(const complex_t *c ) {
  */
 double complex_abs( complex_t *c ) {
     // TODO
-    return 0.0;
+    return sqrt(pow(c->real,2) + pow(c->imag,2));
 }
 
 
