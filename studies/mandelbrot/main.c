@@ -40,7 +40,8 @@ double complex_abs( complex_t *c ) {
  */
 void complex_add( complex_t *c0, complex_t *c1, complex_t *c2 ) {
     // TODO
-
+    c0->real = c1->real + c2->real;
+    c0->imag = c1->imag + c2->imag;
 }
 
 
@@ -52,6 +53,8 @@ void complex_add( complex_t *c0, complex_t *c1, complex_t *c2 ) {
  */
 void complex_sub( complex_t *c0, complex_t *c1, complex_t *c2 ) {
     // TODO
+    c0->real = c1->real - c2->real;
+    c0->imag = c1->imag - c2->imag;
 }
 
 
@@ -63,6 +66,8 @@ void complex_sub( complex_t *c0, complex_t *c1, complex_t *c2 ) {
  */
 void complex_mul( complex_t *c0, complex_t *c1, complex_t *c2 ) {
     // TODO
+    c0->real = c1->real * c2->real;
+    c0->imag = c1->imag * c2->imag;
 }
 
 
@@ -74,6 +79,8 @@ void complex_mul( complex_t *c0, complex_t *c1, complex_t *c2 ) {
  */
 void complex_div( complex_t *c0, complex_t *c1, complex_t *c2 ) {
     // TODO
+    c0->real = c1->real / c2->real;
+    c0->imag = c1->imag / c2->imag;
 }
 
 
