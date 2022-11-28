@@ -14,13 +14,13 @@ typedef struct {
 } entry_t ;
 
 /** the capacity (maximum number of elements) of the name list */
-unsigned list_capacity = 1000;
+unsigned list_capacity = 162253;
 
 /** the length (actual number of elements) of the name list */
 unsigned list_length = 0;
 
 /** the name list (stored as an array) */
-entry_t name_list [1000];
+entry_t name_list [162253];
 
 
 /**
@@ -35,9 +35,10 @@ void append_entry( char* name, int occurrence ) {
 
     // append entry to the list
     // by setting the attributes and increasing the length
-    // TODO (1)
-    name_list[list_length].name = "???";
-    name_list[list_length].occurrence = 0;
+    name_list[list_length].name = strdup(name);
+    //name_list[list_length].name = (char*) malloc(sizeof (char )*(strlen(name)+1));
+    //strcpy(name_list[list_length].name, name);
+    name_list[list_length].occurrence = occurrence;
     list_length++;
 }
 
@@ -70,7 +71,7 @@ int compare_name( const void *p1, const void *p2) {
  * Compare function for sorting entries by occurence
  */
 int compare_occ( const void *p1, const void *p2) {
-    // TODO (4)
+    //  (4)
     return 0;
 }
 
@@ -80,7 +81,7 @@ int compare_occ( const void *p1, const void *p2) {
  */
 void print_list( int nr_entries ) {
     for(unsigned i=0; i<nr_entries && i<list_length; i++)
-        printf("%6i %-15s %10i\n", i+1, name_list[i].name, name_list[i].occurrence);
+        printf("%6i %s %10i\n", i+1, name_list[i].name, name_list[i].occurrence);
 }
 
 
@@ -91,7 +92,13 @@ void print_list( int nr_entries ) {
  */
 entry_t* find_entry( char* n ) {
     // TODO (2)
-    return NULL;
+    for(int i = 0;i < list_length; i++) {
+        if(strncasecmp(name_list[i].name, n, strlen(n))==0){
+            return &name_list[i];
+        }
+    }
+        return NULL;
+
 }
 
 
