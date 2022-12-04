@@ -1,8 +1,8 @@
-# Install script for directory: F:/Programming/cpractice/studies/namelist
+# Install script for directory: F:/Programming/cpractice/studies/inventroylist
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/namelist")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/inventroylist")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "F:/Programming/cpractice/studies/namelist/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "F:/Programming/cpractice/studies/inventroylist/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
