@@ -110,7 +110,10 @@ void remove_from_stock() {
     scanf("%u", &nr);
 
     item_t *item = find_item_stock(id);
-
+    if(item->quantity >= nr)
+    {
+        if
+    }
     // TODO
     // Meldung wenn nicht vorhanden:
     // "Der Artikel XXXX ist nicht auf Lager."
@@ -140,17 +143,14 @@ void add_to_stock() {
         printf("Bitte geben Sie den Preis ein: ");
         scanf("%lf", &stock[stock_size].price);
         printf("Bitte geben Sie Regal und Fach ein: ");
-        scanf("%i/%i",&stock[stock_size].rack,&stock[stock_size].position);
-        //scanf("%i",&stock[stock_size].rack);
-        //scanf("%i",&stock[stock_size].position);
+        //scanf("%i/%i",&stock[stock_size].rack,&stock[stock_size].position);
+        scanf("%i",&stock[stock_size].rack);
+        scanf("%i",&stock[stock_size].position);
         stock[stock_size].id = id;
         stock[stock_size].quantity = nr;
         stock_size++;
 
     }
-
-    // TODO
-    //
 }
 
 
@@ -161,7 +161,14 @@ void add_to_stock() {
 void save_items_to_file(char *filename) {
     printf("Speichere Inventarliste...\n");
     // TODO
+    FILE * fp = fopen(filename, "a");
+    if (fp == NULL) {
+        perror("Inventarliste kann nicht gelesen werden");
+    }
+    fprintf(fp, "%i %lf %i %i %i", stock[stock_size-1].id, stock[stock_size-1].price, stock[stock_size-1].rack, stock[stock_size-1].position, stock[stock_size-1].quantity);
+    fclose(fp);
 }
+
 
 
 /* ----------- */
