@@ -75,7 +75,10 @@ void read_items_from_file(char *filename) {
 void print_stock() {
     printf("  ID | price | rack/pos | #items\n");
     printf("-----+-------+----------+-------\n");
-    // TODO
+    for(int i = 0;i < stock_size;i++)
+    {
+        printf("%04i | %5.2lf |%5i/%-4i| %6i \n", stock[i].id, stock[i].price, stock[i].rack, stock[i].position, stock[i].quantity);
+    }
 }
 
 
@@ -84,6 +87,13 @@ void print_stock() {
  */
 item_t* find_item_stock(unsigned item_id ) {
     // TODO
+    for(int i = 0;i < stock_size;i++)
+    {
+        if(stock[i].id == item_id)
+        {
+            return &stock[i];
+        }
+    }
     return NULL;
 }
 
@@ -121,10 +131,26 @@ void add_to_stock() {
     scanf("%u", &nr);
     // find similar items in stock
     item_t *item = find_item_stock(id);
+    if(item == id)
+    {
+        item->quantity+= nr;
+    }
+    else
+    {
+        printf("Bitte geben Sie den Preis ein: ");
+        scanf("%lf", &stock[stock_size].price);
+        printf("Bitte geben Sie Regal und Fach ein: ");
+        scanf("%i/%i",&stock[stock_size].rack,&stock[stock_size].position);
+        //scanf("%i",&stock[stock_size].rack);
+        //scanf("%i",&stock[stock_size].position);
+        stock[stock_size].id = id;
+        stock[stock_size].quantity = nr;
+        stock_size++;
+
+    }
 
     // TODO
-    // printf("Bitte geben Sie den Preis ein: ");
-    // printf("Bitte geben Sie Regal und Fach ein: ");
+    //
 }
 
 
@@ -142,7 +168,6 @@ void save_items_to_file(char *filename) {
 
 int main() {
     read_items_from_file("inventar.txt");
-
     do {
         printf("--- Inventarliste --- \n");
         print_stock();
