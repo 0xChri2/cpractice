@@ -1,0 +1,3 @@
+/Users/christophriedel/Programming/cpractice/studies/natlog1/cmake-build-debug/CMakeFiles/natlog1.dir
+/Users/christophriedel/Programming/cpractice/studies/natlog1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/christophriedel/Programming/cpractice/studies/natlog1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
