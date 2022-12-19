@@ -48,7 +48,7 @@ build cmake_object_order_depends_target_sokoban: phony || CMakeFiles/sokoban.dir
 
 build CMakeFiles/sokoban.dir/main.c.o: C_COMPILER__sokoban_Debug /Users/christophriedel/Programming/cpractice/studies/sokoban/main.c || cmake_object_order_depends_target_sokoban
   DEP_FILE = CMakeFiles/sokoban.dir/main.c.o.d
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu99
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -std=gnu99
   OBJECT_DIR = CMakeFiles/sokoban.dir
   OBJECT_FILE_DIR = CMakeFiles/sokoban.dir
   TARGET_COMPILE_PDB = CMakeFiles/sokoban.dir/
@@ -63,7 +63,7 @@ build CMakeFiles/sokoban.dir/main.c.o: C_COMPILER__sokoban_Debug /Users/christop
 # Link the executable sokoban
 
 build sokoban: C_EXECUTABLE_LINKER__sokoban_Debug CMakeFiles/sokoban.dir/main.c.o
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
   OBJECT_DIR = CMakeFiles/sokoban.dir
   POST_BUILD = :
   PRE_LINK = :

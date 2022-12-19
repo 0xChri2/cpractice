@@ -145,6 +145,13 @@ unsigned move_left( square_t board[MAX_BOARD_WIDTH][MAX_BOARD_HEIGHT],
         // result 1 = make move
         return 1;
     }
+    if((player_pos->x >= 2) && (board[player_pos->x-2][player_pos->y] == EMPTY) && (board[player_pos->x-1][player_pos->y] == BOX)){
+        board[player_pos->x][player_pos->y] = EMPTY;
+        board[player_pos->x-1][player_pos->y] = PLAYER;
+        board[player_pos->x-2][player_pos->y] = BOX;
+        player_pos->x--;
+        return 1;
+    }
     // result 0 = no move is possible
     return 0;
 }
@@ -158,6 +165,13 @@ unsigned move_right( square_t board[MAX_BOARD_WIDTH][MAX_BOARD_HEIGHT],
         board[player_pos->x+1][player_pos->y] = PLAYER;
         player_pos->x++;
         // result 1 = make move
+        return 1;
+    }
+    if((player_pos->x <= MAX_BOARD_WIDTH-2) && (board[player_pos->x+2][player_pos->y] == EMPTY) && (board[player_pos->x+1][player_pos->y] == BOX)){
+        board[player_pos->x][player_pos->y] = EMPTY;
+        board[player_pos->x+1][player_pos->y] = PLAYER;
+        board[player_pos->x+2][player_pos->y] = BOX;
+        player_pos->x++;
         return 1;
     }
     // result 0 = no move is possible
@@ -176,6 +190,14 @@ unsigned move_up( square_t board[MAX_BOARD_WIDTH][MAX_BOARD_HEIGHT],
         // result 1 = make move
         return 1;
     }
+    if (( (player_pos->y >= 2) &&
+           (board[player_pos->x][player_pos->y-2] == EMPTY) && (board[player_pos->x][player_pos->y-1] == BOX))){
+        board[player_pos->x][player_pos->y] = EMPTY;
+        board[player_pos->x][player_pos->y-2] = BOX;
+        board[player_pos->x][player_pos->y-1] = PLAYER;
+        player_pos->y--;
+        return 1;
+    }
     // result 0 = no move is possible
     return 0;
 }
@@ -191,10 +213,77 @@ unsigned move_down( square_t board[MAX_BOARD_WIDTH][MAX_BOARD_HEIGHT],
         // result 1 = make move
         return 1;
     }
+    if((player_pos->y <= MAX_BOARD_HEIGHT-3) && (board[player_pos->x][player_pos->y+1] == BOX) && (board[player_pos->x][player_pos->y+2] == EMPTY)){
+        board[player_pos->x][player_pos->y] = EMPTY;
+        board[player_pos->x][player_pos->y+1] = PLAYER;
+        board[player_pos->x][player_pos->y+2] = BOX;
+        player_pos->y++;
+        return 1;
+    }
     // result 0 = no move is possible
     return 0;
 }
 
+unsigned move(square_t board[MAX_BOARD_WIDTH][MAX_BOARD_HEIGHT],
+              position_t *player_pos ){
+    int move_directionx = 0;
+    int  move_directiony= 0;
+    //move down
+    if( (player_pos->y <= MAX_BOARD_HEIGHT-2) &&
+        (board[player_pos->x][player_pos->y+1] == EMPTY) ) {
+        move_directiony = 1;
+        // result 1 = make move
+
+    }
+    else if((player_pos->y <= MAX_BOARD_HEIGHT-3) && (board[player_pos->x][player_pos->y+1] == BOX) && (board[player_pos->x][player_pos->y+2] == EMPTY)){
+        move_directiony = 1;
+    }
+    // result 0 = no move is possible
+
+    //move up
+    else if( (player_pos->y >= 1) &&
+             (board[player_pos->x][player_pos->y-1] == EMPTY) ) {
+        move_directiony = -1;
+    }
+    else if (( (player_pos->y >= 2) &&
+          (board[player_pos->x][player_pos->y-2] == EMPTY) && (board[player_pos->x][player_pos->y-1] == BOX))){
+        move_directiony = -1;
+    }
+
+    // move right
+    else if( (player_pos->x <= MAX_BOARD_WIDTH-2) &&
+             (board[player_pos->x+1][player_pos->y] == EMPTY) ) {
+        move_directionx = 1;
+    }
+    else if((player_pos->x <= MAX_BOARD_WIDTH-2) && (board[player_pos->x+2][player_pos->y] == EMPTY) && (board[player_pos->x+1][player_pos->y] == BOX)){
+        move_directionx = 1;
+    }
+
+    //move left
+    else if( (player_pos->x >= 1) &&
+             (board[player_pos->x-1][player_pos->y] == EMPTY) ) {
+        move_directiony= -1;
+    }
+    else if((player_pos->x >= 2) && (board[player_pos->x-2][player_pos->y] == EMPTY) && (board[player_pos->x-1][player_pos->y] == BOX)){
+        move_directiony= -1;
+    }
+    if(move_directiony != 0){
+        board[player_pos->x][player_pos->y] = EMPTY;
+        board[player_pos->x-1][player_pos->y] = PLAYER;
+        board[player_pos->x-2][player_pos->y] = BOX;
+        player_pos->x+ move_directiony;
+        return 1;
+    }
+    else if(move_directionx != 0)
+    {
+        board[player_pos->x][player_pos->y] = EMPTY;
+        board[player_pos->x + move_directionx][player_pos->y] = PLAYER;
+        board[player_pos->x+ (move_directionx+move_directionx)][player_pos->y] = BOX;
+        player_pos->x+ move_directionx;
+        return 1;
+    }
+    return 0;
+}
 
 /*
  * draws the board
@@ -215,7 +304,7 @@ void draw_board( square_t board[MAX_BOARD_WIDTH][MAX_BOARD_HEIGHT],
     // top line: some general information
     printf("Level %i of %i / Moves: %i\n", current_level+1, nr_levels, nr_moves);
 
-    // draw every square of the board
+    // draw every square of the boardƒs
     for( int j=0; j<MAX_BOARD_HEIGHT; j++ ) {
         for( int i=0; i<MAX_BOARD_WIDTH; i++ ) {
             switch(board[i][j]) {
