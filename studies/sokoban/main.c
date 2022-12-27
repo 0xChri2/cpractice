@@ -332,8 +332,22 @@ void draw_board( square_t board[MAX_BOARD_WIDTH][MAX_BOARD_HEIGHT],
  */
 unsigned all_boxes_on_target( square_t board[MAX_BOARD_WIDTH][MAX_BOARD_HEIGHT],
                       unsigned target[MAX_BOARD_WIDTH][MAX_BOARD_HEIGHT] ) {
-    // TODO
-    return 0;
+    /*
+ * count the number of boxes in target squares,
+ * if all boxes are in target squares, return 1 - otherwise 0
+ */
+    unsigned nr_boxes = 0;
+    unsigned nr_boxes_on_target = 0;
+    for( int j=0; j<MAX_BOARD_HEIGHT; j++ ) {
+        for( int i=0; i<MAX_BOARD_WIDTH; i++ ) {
+            if(board[i][j] == BOX) {
+                nr_boxes++;
+                if(target[i][j]) nr_boxes_on_target++;
+            }
+        }
+    }
+    return (nr_boxes == nr_boxes_on_target);
+
 }
 
 
