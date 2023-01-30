@@ -1,0 +1,11 @@
+# ninja log v5
+1	113	6967878800000000	CMakeFiles/sinus.dir/main.c.obj	fa5f0872fbf8dbec
+114	260	6967878800000000	sinus.exe	93ce3e92e67de89e
+2	116	6967879220000000	CMakeFiles/sinus.dir/main.c.obj	fa5f0872fbf8dbec
+116	257	6967879220000000	sinus.exe	93ce3e92e67de89e
+2	107	6967880460000000	CMakeFiles/sinus.dir/main.c.obj	fa5f0872fbf8dbec
+107	250	6967880480000000	sinus.exe	93ce3e92e67de89e
+2	122	6967880580000000	CMakeFiles/sinus.dir/main.c.obj	fa5f0872fbf8dbec
+122	268	6967880580000000	sinus.exe	93ce3e92e67de89e
+3	108	6967880660000000	CMakeFiles/sinus.dir/main.c.obj	fa5f0872fbf8dbec
+108	253	6967880660000000	sinus.exe	93ce3e92e67de89e

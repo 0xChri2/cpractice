@@ -5,7 +5,7 @@ int natlog1(double z){
     double summand = 0;
     double summe = 0;
     double e = 1.0e-6;
-    double x = z-1; //warum ????
+    double x = z-1;
     if((x > -1) && (x <=1)){
         double zaehler = x;
         double nenner = 1;
