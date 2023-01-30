@@ -8,17 +8,20 @@ int fak(int n){
         return 1;
     }
 }
-/*double sinus_f(double x, int n){
+
+double sinus_f(double x, int n){
     int i;
     double sin = 0.0;
     for (i=0;i<n;i++) {
         sin += pow(-1,i)*pow(x,2*i+1)/fak(2*i+1);
     }
     return sin;
-}*/
-
+}
 
 int main() {
-    int x = fak(5);
-    printf("%i",x);
+    int n = 20;
+    double x = 0.88;
+    printf("sinus(%lf, n=%d) = %lf\n",x,n,sinus_f(x,n));
+    printf("sinus-math.h(%lf)= %lf\n",x,sin(x));
+    return 0;
 }
