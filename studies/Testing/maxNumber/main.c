@@ -14,4 +14,5 @@ int main() {
     int array[]= {1,3,23,5,9,8,7};
     int max = maxNumb(&array);
     printf("Die Maximale Zahl ist %d",max);
+    return 0;
 }
