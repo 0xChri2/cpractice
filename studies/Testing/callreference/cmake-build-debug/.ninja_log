@@ -1,0 +1,15 @@
+# ninja log v5
+1	92	6971449860000000	CMakeFiles/callreference.dir/main.c.obj	34901fafcc0bcf2b
+93	249	6971449860000000	callreference.exe	55af2be004009956
+2	108	6971450540000000	CMakeFiles/callreference.dir/main.c.obj	34901fafcc0bcf2b
+109	254	6971450540000000	callreference.exe	55af2be004009956
+2	113	6971450860000000	CMakeFiles/callreference.dir/main.c.obj	34901fafcc0bcf2b
+113	266	6971450860000000	callreference.exe	55af2be004009956
+2	98	6971451240000000	CMakeFiles/callreference.dir/main.c.obj	34901fafcc0bcf2b
+99	248	6971451240000000	callreference.exe	55af2be004009956
+2	100	6971451360000000	CMakeFiles/callreference.dir/main.c.obj	34901fafcc0bcf2b
+100	233	6971451360000000	callreference.exe	55af2be004009956
+2	113	6971452680000000	CMakeFiles/callreference.dir/main.c.obj	34901fafcc0bcf2b
+114	261	6971452700000000	callreference.exe	55af2be004009956
+2	104	6971453460000000	CMakeFiles/callreference.dir/main.c.obj	34901fafcc0bcf2b
+104	250	6971453460000000	callreference.exe	55af2be004009956
