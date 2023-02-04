@@ -1,20 +1,39 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
    int rows,columns = 0;
     printf("Geben sie die Anzahl der Zeilen und Spalten an: ");
-    scanf("%d", &n);
-    scanf("%d",&m);
+    scanf("%d", &rows);
+    scanf("%d",&columns);
 
     int **matrix = (int**)malloc(rows * sizeof(int*));
     for (int i = 0; i < rows; i++) {
         matrix[i] = (int*)malloc(columns * sizeof(int));
     }
+    printf("Enter the elements of the matrix: \n");
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns; j++) {
+            scanf("%d", &matrix[i][j]);
+        }
+    }
 
+    printf("The matrix is: \n");
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns; j++) {
+            printf("%d ", matrix[i][j]);
+        }
+        printf("\n");
+    }
 
+    for (int i = 0; i < rows; i++) {
+        free(matrix[i]);
+    }
+    free(matrix);
+    return 0;
 }
 
-/*PE1 Musterklausur Nr 4 a
+/*
  * In C muss die Speicherallokation für eine Matrix explizit durchgeführt werden
  * , um die Größe und den Zugriff auf die Matrixelemente sicherzustellen.
  * Die Initialisierung einer Matrix erfolgt normalerweise durch das Reservieren von Speicher für jede Zeile der Matrix.
