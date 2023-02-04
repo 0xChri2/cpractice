@@ -1,0 +1,17 @@
+# ninja log v5
+0	101	6972199480000000	CMakeFiles/countDigitsAndLetters.dir/main.c.obj	3ce6ed9db24d2682
+102	255	6972199480000000	countDigitsAndLetters.exe	c6a2cb114a02c799
+2	87	6972199880000000	CMakeFiles/countDigitsAndLetters.dir/main.c.obj	3ce6ed9db24d2682
+88	236	6972199880000000	countDigitsAndLetters.exe	c6a2cb114a02c799
+2	99	6972202240000000	CMakeFiles/countDigitsAndLetters.dir/main.c.obj	3ce6ed9db24d2682
+100	245	6972202240000000	countDigitsAndLetters.exe	c6a2cb114a02c799
+2	106	6972203580000000	CMakeFiles/countDigitsAndLetters.dir/main.c.obj	3ce6ed9db24d2682
+106	258	6972203580000000	countDigitsAndLetters.exe	c6a2cb114a02c799
+2	99	6972204800000000	CMakeFiles/countDigitsAndLetters.dir/main.c.obj	3ce6ed9db24d2682
+100	246	6972204800000000	countDigitsAndLetters.exe	c6a2cb114a02c799
+2	95	6972205860000000	CMakeFiles/countDigitsAndLetters.dir/main.c.obj	3ce6ed9db24d2682
+96	242	6972205880000000	countDigitsAndLetters.exe	c6a2cb114a02c799
+2	109	6972206160000000	CMakeFiles/countDigitsAndLetters.dir/main.c.obj	3ce6ed9db24d2682
+110	239	6972206160000000	countDigitsAndLetters.exe	c6a2cb114a02c799
+2	96	6972207020000000	CMakeFiles/countDigitsAndLetters.dir/main.c.obj	3ce6ed9db24d2682
+97	249	6972207020000000	countDigitsAndLetters.exe	c6a2cb114a02c799
