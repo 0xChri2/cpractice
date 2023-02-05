@@ -1,0 +1,7 @@
+# ninja log v5
+116	267	6973058620000000	Recrusivandnormal.exe	133aed52f44c82dd
+3	116	6973058620000000	CMakeFiles/Recrusivandnormal.dir/main.c.obj	8014fe82dc461365
+2	85	6973058720000000	CMakeFiles/Recrusivandnormal.dir/main.c.obj	8014fe82dc461365
+85	220	6973058720000000	Recrusivandnormal.exe	133aed52f44c82dd
+2	121	6973058760000000	CMakeFiles/Recrusivandnormal.dir/main.c.obj	8014fe82dc461365
+121	276	6973058780000000	Recrusivandnormal.exe	133aed52f44c82dd
