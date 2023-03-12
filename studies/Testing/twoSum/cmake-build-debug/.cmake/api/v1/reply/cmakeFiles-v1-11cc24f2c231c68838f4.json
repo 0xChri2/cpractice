@@ -429,8 +429,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "F:/Programming/cpractice/studies/Testing/search/cmake-build-debug",
-		"source" : "F:/Programming/cpractice/studies/Testing/search"
+		"build" : "F:/Programming/cpractice/studies/Testing/twoSum/cmake-build-debug",
+		"source" : "F:/Programming/cpractice/studies/Testing/twoSum"
 	},
 	"version" : 
 	{
