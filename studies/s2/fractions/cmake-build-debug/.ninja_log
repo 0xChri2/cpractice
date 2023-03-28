@@ -1,0 +1,10 @@
+# ninja log v5
+1	99	7016985140000000	CMakeFiles/fractions.dir/main.c.obj	dcb4879a01afa862
+4	698	7016986440000000	build.ninja	8d60cdfff56a08b8
+2	93	7017002340000000	CMakeFiles/fractions.dir/main.c.obj	dcb4879a01afa862
+1	93	7017005200000000	CMakeFiles/fractions.dir/main.c.obj	dcb4879a01afa862
+2	97	7017008960000000	CMakeFiles/fractions.dir/main.c.obj	dcb4879a01afa862
+2	102	7017009300000000	CMakeFiles/fractions.dir/main.c.obj	dcb4879a01afa862
+2	101	7017009700000000	CMakeFiles/fractions.dir/main.c.obj	dcb4879a01afa862
+2	105	7017009860000000	CMakeFiles/fractions.dir/main.c.obj	dcb4879a01afa862
+2	106	7017010560000000	CMakeFiles/fractions.dir/main.c.obj	dcb4879a01afa862
