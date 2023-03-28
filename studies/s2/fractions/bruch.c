@@ -78,6 +78,11 @@ bruch_t div (bruch_t a, bruch_t b){
     return r;
 }
 
+bruch_t valueof (double value){
+    /*bruch_t r ={value,1};    abbruch bedingung fehlt
+    for(int i = 1;*/
+}
+
 void output ( bruch_t q ) {
     printf (" (% d /% d )\ n " , q.z , q. n );
 }

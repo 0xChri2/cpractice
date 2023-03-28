@@ -14,6 +14,7 @@ bruch_t add ( bruch_t a , bruch_t b );
 bruch_t sub ( bruch_t a , bruch_t b);
 bruch_t multi (bruch_t a, bruch_t b);
 bruch_t div (bruch_t a, bruch_t b);
+bruch_t valueof (double value);
 void output ( bruch_t q );
 
 #endif
