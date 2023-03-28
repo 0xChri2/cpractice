@@ -55,6 +55,12 @@ build CMakeFiles/fractions.dir/main.c.obj: C_COMPILER__fractions_Debug F$:/Progr
   OBJECT_DIR = CMakeFiles\fractions.dir
   OBJECT_FILE_DIR = CMakeFiles\fractions.dir
 
+build CMakeFiles/fractions.dir/bruch.c.obj: C_COMPILER__fractions_Debug F$:/Programming/cpractice/studies/s2/fractions/bruch.c || cmake_object_order_depends_target_fractions
+  DEP_FILE = CMakeFiles\fractions.dir\bruch.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles\fractions.dir
+  OBJECT_FILE_DIR = CMakeFiles\fractions.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target fractions
@@ -63,7 +69,7 @@ build CMakeFiles/fractions.dir/main.c.obj: C_COMPILER__fractions_Debug F$:/Progr
 #############################################
 # Link the executable fractions.exe
 
-build fractions.exe: C_EXECUTABLE_LINKER__fractions_Debug CMakeFiles/fractions.dir/main.c.obj
+build fractions.exe: C_EXECUTABLE_LINKER__fractions_Debug CMakeFiles/fractions.dir/main.c.obj CMakeFiles/fractions.dir/bruch.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\fractions.dir

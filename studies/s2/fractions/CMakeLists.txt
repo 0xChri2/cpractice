@@ -3,4 +3,4 @@ project(fractions C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(fractions main.c)
+add_executable(fractions main.c bruch.c)
