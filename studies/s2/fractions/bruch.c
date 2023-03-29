@@ -88,7 +88,7 @@ bruch_t valueof (double value){
     do{
          n *= 10;
          z *= 10;
-    } while (((int)z/n) == value);
+    } while (((int)z/n) != value);
     bruch_t r ={z,n};
     return r;
 }
