@@ -9,7 +9,6 @@ int main() {
     char input[100];
     printf("Enter an expression in reverse Polish notation: ");
     fgets(input,100,stdin);
-
-
+    
 
 }
