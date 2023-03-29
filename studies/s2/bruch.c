@@ -72,10 +72,6 @@ bruch_t multi (bruch_t a, bruch_t b){
     return r;
 }
 bruch_t div (bruch_t a, bruch_t b){
-    if(b.n | a.n == 0)
-    {
-        return a;
-    }
     int z = a.z * b.n;
     int n = a.n * b.z;
     bruch_t r = {z,n};
@@ -83,19 +79,10 @@ bruch_t div (bruch_t a, bruch_t b){
 }
 
 bruch_t valueof (double value){
-    double z = value;
-    double n = 1.00;
-    for(int i = 0;i<=50;i++){
-         n *= 10;
-         z *= 10;
-        if(((int)z/n) == value)
-        {
-            bruch_t r ={z,n};
-            return r;
-        }
-    }
+    /*bruch_t r ={value,1};    abbruch bedingung fehlt
+    for(int i = 1;*/
 }
 
 void output ( bruch_t q ) {
-    printf ("(%d /%d)\n " , q.z , q. n );
+    printf (" (% d /% d )\ n " , q.z , q. n );
 }

@@ -1,3 +1,0 @@
-F:/Programming/cpractice/studies/s2/comlex_t/cmake-build-debug/CMakeFiles/comlex_t.dir
-F:/Programming/cpractice/studies/s2/comlex_t/cmake-build-debug/CMakeFiles/edit_cache.dir
-F:/Programming/cpractice/studies/s2/comlex_t/cmake-build-debug/CMakeFiles/rebuild_cache.dir

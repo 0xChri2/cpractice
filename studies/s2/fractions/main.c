@@ -47,12 +47,14 @@ int main ( void ) {
     // divison
     bruch_t mult [2] = {{5 ,4} , {2 ,6}};
     bruch_t result = divisum(mult, 2);
+    double test = 2.324;
+    output(valueof(test));
 
     char s[32], str[2][32];
     for(int i = 0;i < 2;i++)
         btos(mult[i], str[i],32);
     btos(result,s,32);
 
-    printf ("% s / % s = %s \n" , str [0] , str [1] , s );
+    printf ("%s / %s = %s \n" , str [0] , str [1] , s );
     return 0;
 }
