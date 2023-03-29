@@ -21,7 +21,7 @@ jobs:
 
     - name: Build C code
       run: |
-        gcc -o main studies/Testing/listeactiontest/test.c
+        gcc -o main studies/Testing/listeactiontest/test.c studies/Testing/listeactiontest/liste.c
 
     - name: Run tests
       run: |
