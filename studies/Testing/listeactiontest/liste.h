@@ -10,10 +10,12 @@ typedef struct list list_t;
 //====================================
 // interface
 //====================================
-list_t *create(int nmemb, int esize);
-void append(list_t *l, void *val);
-void *getValueAt(list_t *l, int pos);
-char getError(list_t *l);
+list_t *create(void);
+void append(list_t *l, int val);
+int getValueAt(list_t *l, int pos);
+void erase(list_t *l, int val);
+void toScreen(list_t *l);
+char getError(list_t *l); // neu !!!
 void destroy(list_t *l);
 
 #endif //LISTE_H

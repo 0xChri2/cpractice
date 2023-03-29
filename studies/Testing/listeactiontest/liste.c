@@ -3,52 +3,74 @@
 #include "liste.h"
 
 struct list {
-    void **value;
-    int nmemb;
-    int next;
+    int size, next, *values;
     char error;
-    int esize;
 };
 
-list_t *create(int nmemb, int esize) {
+list_t *create(void) {
     list_t *l;
-    l = (list_t *) malloc(sizeof(list_t));
+    l = (list_t *) calloc(1, sizeof(list_t));
+
+    l->size = 8;
     l->next = 0;
-    l->nmemb = nmemb;
-    l->esize = esize;
+    l->values = (int *) calloc(8, sizeof(int));
     l->error = 0;
-    l->value = (void **) calloc(nmemb, sizeof(void *));
+
     return l;
 }
 
 // private !
 static char isFull(list_t *l) {
-    return l->next == l->nmemb;
+    return l->size == l->next;
 }
 
-// private
+// private !
 static void increase(list_t *l) {
-    l->nmemb *= 2;
-    l->value = (void **) realloc(l->value,
-                                 l->nmemb * sizeof(void *));
+    l->size *= 2;
+    l->values = (int *) realloc(l->values,
+                                l->size * sizeof(int));
 }
 
-void append(list_t *l, void *val) {
-    void *elem;
+void append(list_t *l, int val) {
     if (isFull(l))
         increase(l);
-    elem = malloc(l->esize);
-    memcpy(elem, val, l->esize);
-    l->value[l->next] = elem;
+    l->values[l->next] = val;
     l->next += 1;
 }
 
-void *getValueAt(list_t *l, int pos) {
+// private !
+static int find(list_t *l, int val) {
+    int pos;
+    for (pos = 0; pos < l->next; pos++)
+        if (l->values[pos] == val)
+            return pos;
+    return -1;
+}
+
+// private !
+static void decrease(list_t *l) {
+    l->size /= 2;
+    l->values = (int *) realloc(l->values,
+                                l->size * sizeof(int));
+}
+
+void erase(list_t *l, int val) {
+    int pos = find(l, val);
+    if (pos == -1)
+        return;
+    for (; pos < l->next - 1; pos++)
+        l->values[pos] = l->values[pos + 1];
+    l->next -= 1;
+    if (l->next < l->size / 4)
+        decrease(l);
+}
+
+int getValueAt(list_t *l, int pos) {
     if (pos < 0 || pos >= l->next) {
         l->error = 1;
-        return NULL;
+        return -1;
     }
-    return l->value[pos]; // oder Kopie liefern ?
+    return l->values[pos];
 }
 
 char getError(list_t *l) {
@@ -56,9 +78,15 @@ char getError(list_t *l) {
 }
 
 void destroy(list_t *l) {
-    int i;
-    for (i = 0; i < l->next; i++)
-        free(l->value[i]);
-    free(l->value);
+    free(l->values);
     free(l);
+}
+
+void toScreen(list_t *l) {
+    for (int i = 0; i < l->next; i++) {
+        if (i > 0)
+            printf(" , ");
+        printf(" % d ", l->values[i]);
+    }
+    printf(" \n ");
 }
