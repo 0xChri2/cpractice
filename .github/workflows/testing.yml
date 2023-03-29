@@ -18,13 +18,10 @@ jobs:
 
     - name: Install build tools
       run: sudo apt-get install build-essential
-      
-    - name: Go To folder
-      run: cd studies/Testing/listeactiontest
 
     - name: Build C code
       run: |
-        gcc -o main test.c
+        gcc -o main studies/Testing/listeactiontest/test.c
 
     - name: Run tests
       run: |
