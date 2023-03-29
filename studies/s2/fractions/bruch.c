@@ -85,15 +85,12 @@ bruch_t div (bruch_t a, bruch_t b){
 bruch_t valueof (double value){
     double z = value;
     double n = 1.00;
-    for(int i = 0;i<=50;i++){
+    do{
          n *= 10;
          z *= 10;
-        if(((int)z/n) == value)
-        {
-            bruch_t r ={z,n};
-            return r;
-        }
-    }
+    } while (((int)z/n) == value);
+    bruch_t r ={z,n};
+    return r;
 }
 
 void output ( bruch_t q ) {
