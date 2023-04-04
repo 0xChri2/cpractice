@@ -10,14 +10,19 @@ heap_t *createHeap(){
     h->data = (int) malloc(sizeof(int) *10);
     h->size = 10;
     h->min = 1;
+    return h;
 }
 
 char insert(heap_t *h, int val){
+    if(val < h->size){
+        h->size = val;
+    }
+    h->data = realloc(h->data, sizeof(int) * h->size);
     h->data = val;
 }
 
 int minimum(heap_t *h){
-    return h->min;
+    return h->data[h->min];
 }
 
 char extractMin(heap_t *h){
@@ -29,11 +34,12 @@ char getError(heap_t *h){
 }
 
 char* toString(heap_t *h){
-    char str[100];
+    char *str[100];
     sprintf(str,"%d", h->data);
     return str;
 }
 
 void destroyHeap(heap_t *h){
     free(h);
+    free(h->data);
 }

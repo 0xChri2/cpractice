@@ -52,6 +52,12 @@ build CMakeFiles/heap_t.dir/main.c.o: C_COMPILER__heap_t_Debug /Users/christophr
   OBJECT_DIR = CMakeFiles/heap_t.dir
   OBJECT_FILE_DIR = CMakeFiles/heap_t.dir
 
+build CMakeFiles/heap_t.dir/heap.c.o: C_COMPILER__heap_t_Debug /Users/christophriedel/Programming/cpractice/studies/s2/heap_t/heap.c || cmake_object_order_depends_target_heap_t
+  DEP_FILE = CMakeFiles/heap_t.dir/heap.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/heap_t.dir
+  OBJECT_FILE_DIR = CMakeFiles/heap_t.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target heap_t
@@ -60,7 +66,7 @@ build CMakeFiles/heap_t.dir/main.c.o: C_COMPILER__heap_t_Debug /Users/christophr
 #############################################
 # Link the executable heap_t
 
-build heap_t: C_EXECUTABLE_LINKER__heap_t_Debug CMakeFiles/heap_t.dir/main.c.o
+build heap_t: C_EXECUTABLE_LINKER__heap_t_Debug CMakeFiles/heap_t.dir/main.c.o CMakeFiles/heap_t.dir/heap.c.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
   OBJECT_DIR = CMakeFiles/heap_t.dir
   POST_BUILD = :
