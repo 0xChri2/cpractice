@@ -29,7 +29,9 @@ char getError(heap_t *h){
 }
 
 char* toString(heap_t *h){
-
+    char str[100];
+    sprintf(str,"%d", h->data);
+    return str;
 }
 
 void destroyHeap(heap_t *h){
