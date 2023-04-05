@@ -29,7 +29,17 @@ int minimum(heap_t *h){
 }
 
 char extractMin(heap_t *h){
-
+    if(h->min >= h->size){
+        h->error = 1;
+        return -1;
+    } else {
+        int min = h->data[h->min];
+        for(int i = h->min; i < h->size -1; i++){
+            h->data[i] = h->data[i + 1];
+        }
+        h->size--;
+        return min;
+    }
 }
 
 char getError(heap_t *h){
