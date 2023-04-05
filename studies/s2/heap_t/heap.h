@@ -5,7 +5,7 @@
 #ifndef HEAP_T_HEAP_H
 #define HEAP_T_HEAP_H
 typedef struct{
-    int data;
+    int *data;
     int error;
     int size;
     int min;
