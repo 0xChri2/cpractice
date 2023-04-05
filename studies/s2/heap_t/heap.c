@@ -41,9 +41,10 @@ char* toString(heap_t *h){
     int len = 0;
     char buf[h->size];
     for(int i =0;i< h->size;i++){
-        sprintf(buf,"%d", h->data);
+        sprintf(buf,"%d", h->data[i]);
+        strcat(str, buf);
+        strcat(str, " ");
     }
-    strcat(str,buf);
     return str;
 
 
@@ -52,4 +53,5 @@ char* toString(heap_t *h){
 void destroyHeap(heap_t *h){
     free(h);
     free(h->data);
+
 }
