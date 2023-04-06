@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
-#include "Car.h"
+#include "car.h"
 
 using namespace std;
 
 int main(void){
-    Car car()
+    Car car("VW", "Golf", 2010, 300);
 }
