@@ -12,11 +12,10 @@ class umrechnen{
         double _milen;
         double _kmh;
         int _anzahl;
-        void ausgabe(double milen, int anzahl);
-        double miletokmh (double milen, int anzahl);
-        umrechnen(double milen, double kmh, double anzahl);
+        void ausgabe(double milen);
+        umrechnen(double milen);
     private:
-
+        double miletokmh (double milen);
 };
 
 
