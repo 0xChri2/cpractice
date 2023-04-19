@@ -7,17 +7,17 @@
 
 class complex{
 public:
-    int _imag;
-    int _real;
-    complex();
+    int *_imag;
+    int *_real;
+    complex(double imag, double real);
     ~complex();
     complex *addComplex(complex *a, complex *b);
     complex *getComplex(double re, double im);
-    complex t *mulComplex(complex *a, complex *b);
-    complex t *subComplex(complex *a, complex *b);
-    complex t *divComplex(complex *a, complex *b);
+    complex *mulComplex(complex *a, complex *b);
+    complex *subComplex(complex *a, complex *b);
+    complex *divComplex(complex *a, complex *b);
     void printComplex(complex *a);
-    complex t *cleanComplex(complex *c);
+    complex *cleanComplex(complex *c);
 
 };
 
