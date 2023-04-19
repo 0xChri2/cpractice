@@ -1,7 +1,3 @@
-//
-// Created by Christoph Riedel on 18.04.23.
-//
-
 #ifndef COMPLEXCPP_COMPLEX_H
 #define COMPLEXCPP_COMPLEX_H
 
