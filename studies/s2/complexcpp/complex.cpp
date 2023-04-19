@@ -19,17 +19,32 @@ complex::~complex(){
 complex* complex::addComplex(complex *a, complex *b){
     double real = *a->_real + *b->_real;
     double imag = *a->_imag + *b->_imag;
-    return new complex(imag, real);
+    return new complex(real, imag);
 }
 
 complex* complex::mulComplex(complex *a, complex *b){
-    double real = *a->_real * *b->_real - *a->_imag * *b->_imag;
-    double imag = *a->_real * *b->_imag + *a->_imag * *b->_real;
+    complex *result = new complex(0,0);
+    *result->_real = *a->_real * *b->_real - *a->_imag * *b->_imag;
+    *result->_imag = *a->_real * *b->_imag + *a->_imag * *b->_real;
+    return result;
+}
+
+/*complex* complex::addComplex(complex *a, complex *b){
+    double real = a->_real + b->_real;
+    double imag = a->_imag + b->_imag;
     return new complex(imag, real);
 }
 
+
+complex* complex::mulComplex(complex *a, complex *b){
+
+    double real = a->_real * b->_real - a->_imag * b->_imag;
+    double imag = a->_real * b->_imag + a->_imag * b->_real;
+    return new complex(imag, real);
+}*/
+/*
 complex* complex::subComplex(complex *a, complex *b){
-    double imag = *a->_imag - *b->_imag;
-    double real = *b->_real - *b->_real;
+    double imag = a->_imag - b->_imag;
+    double real = b->_real - b->_real;
     return new complex(imag,real);
-}
+}*/

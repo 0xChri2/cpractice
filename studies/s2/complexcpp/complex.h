@@ -7,8 +7,8 @@
 
 class complex{
 public:
-    int *_imag;
-    int *_real;
+    double *_imag;
+    double *_real;
     complex(double imag, double real);
     ~complex();
     complex *addComplex(complex *a, complex *b);
