@@ -1,6 +1,3 @@
-//
-// Created by Christoph Riedel on 05.04.23.
-//
 #include <iostream>
 #include <string>
 #include "Car.h"
