@@ -1,7 +1,3 @@
-//
-// Created by Christoph Riedel on 07.04.23.
-//
-
 #ifndef MILETOKMH_MILETOKMH_H
 #define MILETOKMH_MILETOKMH_H
 
