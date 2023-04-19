@@ -1,6 +1,3 @@
-//
-// Created by Christoph Riedel on 07.04.23.
-//
 #include <iostream>
 #include <string>
 #include "miletokmh.h"
