@@ -1,20 +1,30 @@
 #include <iostream>
 #include <string>
-#include "Car.h"
+#include "car.h"
 
 using namespace std;
 
-Car::Car(string brand, string model, string year, double maxspeed){
+int Car::_serialnumber = 0;
+
+Car::Car(string brand, string model, int year, double maxspeed){
     _brand = brand;
     _model = model;
     _year = year;
     _speednow = 0;
+    serialnumber = ++_serialnumber;
     _maxspeed = maxspeed;
+}
+
+Car::~Car(){
+
 }
 
 string Car::getbrand(){
     return _brand;
 }
+int Car::getser(){
+    return _serialnumber;
+};
 
 string Car::getmodel(){
     return _model;
@@ -46,11 +56,12 @@ double Car::acceleration(double kmh){
     }
     return _speednow;
 }
-void Car::showinfo(){
+void Car::showinfos(){
     cout << "Brand: " << _brand << endl;
     cout << "Model: " << _model << endl;
     cout << "Year: " << _year << endl;
     cout << "Speednow: " << _speednow<< endl;
     cout << "Max Speed: " << _maxspeed << endl;
+    cout << "Serienummer: " << _serialnumber << endl;
 }
 
