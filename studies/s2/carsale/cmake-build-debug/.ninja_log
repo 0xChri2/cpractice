@@ -1,0 +1,12 @@
+# ninja log v5
+1	569	1682417365372027360	CMakeFiles/carsale.dir/sale.cpp.o	82bf72b3a177cf44
+5	453	1682417949090764037	CMakeFiles/carsale.dir/main.cpp.o	d1abebb1fe81a691
+453	585	1682417949223638972	carsale	17e49aeff57bf9be
+11	499	1682418197972156135	CMakeFiles/carsale.dir/main.cpp.o	d1abebb1fe81a691
+499	548	1682418198024620067	carsale	17e49aeff57bf9be
+5	457	1682418418138290393	CMakeFiles/carsale.dir/main.cpp.o	d1abebb1fe81a691
+457	501	1682418418184045004	carsale	17e49aeff57bf9be
+6	429	1682418597055477757	CMakeFiles/carsale.dir/main.cpp.o	d1abebb1fe81a691
+10	395	1682418616991843629	CMakeFiles/carsale.dir/sale.cpp.o	82bf72b3a177cf44
+9	400	1682418616997306421	CMakeFiles/carsale.dir/main.cpp.o	d1abebb1fe81a691
+400	444	1682418617043518121	carsale	17e49aeff57bf9be
