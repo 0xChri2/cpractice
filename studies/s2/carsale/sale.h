@@ -14,6 +14,7 @@ class sale{
         string getcar();
         int getdate();
         int getsales();
+        string tostring();
 
 };
 class FileExtractor{

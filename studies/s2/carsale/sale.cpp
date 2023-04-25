@@ -1,4 +1,5 @@
 #include <iostream>
+#include <sstream>
 #include "sale.h"
 
 using namespace std;
@@ -22,4 +23,10 @@ int sale::getsales() {
 
 int sale::getdate() {
     return _date;
+}
+
+string sale::tostring() {
+    ostringstream car;
+    car << "Datum: " << _date << ", Marke: " << _car << ", Anzahl: " << _sales;
+    return car.str();
 }
