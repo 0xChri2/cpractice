@@ -16,5 +16,16 @@ class sale{
         int getsales();
 
 };
+class FileExtractor{
+    public:
+        FileExtractor();
+        ~FileExtractor();
+        string extract(string datei);
+    private:
+        string _datei;
+
+
+
+};
 
 #endif //CARSALE_SALE_H
