@@ -1,6 +1,7 @@
 #include "heap.h"
 #include <iostream>
 #include <sstream>
+#include <fstream>
 
 using namespace std;
 
@@ -56,4 +57,24 @@ string heap::toString(){
         ss << _data[i] << " ";
     }
     return ss.str();
+}
+
+string heap::readFile(string filename) {
+    ifstream file(filename);
+    vector<string> lines;
+    if (!file.is_open()) {
+        cout << "Error opening file " << filename << endl;
+        return "";
+    }
+    stringstream buffer;
+    while (getline(file, buffer, ';')) {
+        lines.push_back(buffer);
+    }
+
+    file.close();
+    return content;
+}
+
+string heap::writeFile(string filename) {
+    ofstream outdata;
 }
