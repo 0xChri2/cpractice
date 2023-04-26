@@ -60,15 +60,15 @@ string heap::toString(){
 }
 
 string heap::readFile(string filename) {
-    ifstream file(filename);
-    vector<string> lines;
+    fstream file(filename);
     if (!file.is_open()) {
         cout << "Error opening file " << filename << endl;
         return "";
-    }
-    stringstream buffer;
-    while (getline(file, buffer, ';')) {
-        lines.push_back(buffer);
+    } else {
+        file.open(filename);
+        int output;
+        file >> output;
+        
     }
 
     file.close();
