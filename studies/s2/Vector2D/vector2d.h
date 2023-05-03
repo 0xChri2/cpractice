@@ -3,15 +3,17 @@
 
 class vector2d{
 private:
-    int x1, x2,y1,y2;
+
 
 public:
-    vector2d();
+    int _x, _y;
+    vector2d(int _x = 0, int _y = 0);
     ~vector2d();
-    vector2d operator*();
-    vector2d operator+();
-    vector2d operator-();
-    vector2d operator/();
+    int operator*(const vector2d &y) const;
+    vector2d operator+(const vector2d &y) const;
+    friend std::istream& operator>>(std::istream& is, vector2d& v);
+    friend std::ostream& operator<<(std::ostream& os, vector2d& v);
+    //vector2d operator/();
 
 };
 
