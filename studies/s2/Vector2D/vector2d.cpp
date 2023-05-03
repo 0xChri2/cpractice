@@ -1,7 +1,7 @@
 #include <iostream>
 #include "vector2d.h"
 
-vector2d::vector2d(int x, int y) : _x(x), _y(y){}
+vector2d::vector2d(double x, double y) : _x(x), _y(y){}
 
 vector2d::~vector2d() {}
 
@@ -12,8 +12,8 @@ vector2d vector2d::operator+(const vector2d& y) const {
     return result;
 }
 
-int vector2d::operator*(const vector2d &y) const {
-    int result = (_x * y._x)+(_y * y._y);
+double vector2d::operator*(const vector2d &y) const {
+    double result = (_x * y._x)+(_y * y._y);
     return result;
 }
 
@@ -25,6 +25,14 @@ std::istream& operator>>(std::istream& is, vector2d& v) {
 std::ostream& operator<<(std::ostream& os, vector2d& v){
     os << "(" << v._x << ", " << v._y << ")";
     return os;
+}
+
+void vector2d::turn(double alpha){
+    double rad = alpha * M_PI / 180.00;
+    double x_neu = _x * cos(rad) - _y * sin(rad);
+    double y_neu = _x * sin(rad) + _y * cos(rad);
+    _x = x_neu;
+    _y = y_neu;
 }
 
 
