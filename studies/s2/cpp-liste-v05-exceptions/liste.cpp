@@ -81,6 +81,10 @@ char Liste::getError() {
     return _error;
 }
 
+int Liste::getSize() {
+    return _size;
+}
+
 Liste Liste::operator+(Liste & lst){
     Liste result(*this);
     for(int i = 0;i<=lst._size; i++){
@@ -89,3 +93,16 @@ Liste Liste::operator+(Liste & lst){
     return result;
 }
 
+int Liste::operator[](int pos){
+    if (pos < 0 || pos >= _size) {
+        throw out_of_range("Index out of range");
+    }
+    return _values[pos];
+}
+
+ostream& operator<<(ostream& out,Liste & lst){
+    for(int i = 0;i<= lst.getSize(); i++){
+        cout << i + 1 << " : " << lst.getValueAt(i) << endl;
+    }
+    return out;
+}
