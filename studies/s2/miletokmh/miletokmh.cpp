@@ -11,6 +11,15 @@ umrechnen::umrechnen(double milen) {
 }
 
 double umrechnen::miletokmh(double milen) {
+    try {
+        if (milen < 0){
+            throw string("Fehler: negative Zahl");
+        }
+    }
+    catch (string &e) {
+        cout << "Fehler: negative Zahl" << endl;
+        return 0;
+    }
     double _kmh = milen * 1.609344;
     return _kmh;
 }
