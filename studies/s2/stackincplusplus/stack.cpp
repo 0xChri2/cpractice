@@ -1,35 +1,47 @@
 //
 // Created by Chris on 28/03/2023.
 //
+#include <iostream>
 #include "stack.h"
 #include <cstdlib>
 #include <cstdio>
 
-mystack_t::mystack_t(){
-    _data = new float[10];
+template<typename T>
+mystack_t<T>::mystack_t(){
+    _data = new T[10];
     _size = 0;
     _capacity = 10;
     _error = 0;
 }
-
-mystack_t::~mystack_t(){
+template<typename T>
+mystack_t<T>::~mystack_t(){
     delete[] _data;
 }
-
-char mystack_t::isEmpty(){
+template<typename T>
+char mystack_t<T>::isEmpty(){
     return _size == 0;
 }
-
-void mystack_t::push(float value){
-    for(int i = 0;i<= _size;i++){
-        _data[i] = 1;
+template<typename T>
+void mystack_t<T>::push(T value){
+    if(_size == _capacity){
+        _error = 1;
+        return;
     }
+    _data[_size] = value;
+    _size++;
 }
 
-float mystack_t::pop(){
+template<typename T>
+T mystack_t<T>::pop(){
+    if (_size == 0) {
+        _error = 1;
+        return T();
+    }
+    _size--;
     return _data[_size];
 }
 
-char mystack_t::getError(){
+template<typename T>
+char mystack_t<T>::getError(){
     return _error;
 }

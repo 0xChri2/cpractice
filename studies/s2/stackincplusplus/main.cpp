@@ -4,13 +4,27 @@
 using namespace std;
 
 int main() {
+    // Erstellen eines Integer-Stacks
+    mystack_t<int> stack;
 
-    stack_t s;
-    char input[100];
-    cout << "Enter an expression in reverse Polish notation:" << endl;
+    // Testen, ob der Stack leer ist
+    std::cout << "Stack ist leer: " << stack.isEmpty() << std::endl;
 
-    fgets(input,100,stdin);
+    // Hinzufügen von Elementen zum Stack
+    stack.push(1);
+    stack.push(2);
+    stack.push(3);
 
+    // Testen, ob der Stack leer ist
+    std::cout << "Stack ist leer: " << stack.isEmpty() << std::endl;
 
+    // Entfernen von Elementen vom Stack
+    std::cout << "Entferntes Element: " << stack.pop() << std::endl;
+    std::cout << "Entferntes Element: " << stack.pop() << std::endl;
+    std::cout << "Entferntes Element: " << stack.pop() << std::endl;
 
+    // Testen, ob der Stack leer ist
+    std::cout << "Stack ist leer: " << stack.isEmpty() << std::endl;
+
+    return 0;
 }

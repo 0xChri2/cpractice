@@ -2,23 +2,23 @@
 // Created by Chris on 28/03/2023.
 //
 
-#ifndef STACK_T_STACK_H
-#define STACK_T_STACK_H
+#ifndef STACK_H
+#define STACK_H
+
+template<typename T>
 class mystack_t{
     public:
         mystack_t();
         ~mystack_t();
         char isEmpty();
-        void push(float value);
-        float top();
-        float pop();
+        void push(T value);
+        T top();
+        T pop();
         char getError();
-    float *_data;
+    T *_data;
     int _capacity;
     int _error;
     int _size;
 };
 
-
-
-#endif //STACK_T_STACK_H
+#endif //STACK_H
