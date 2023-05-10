@@ -6,7 +6,7 @@
 using namespace std;
 
 class Car{
-private:
+protected:
     string _brand;
     string _model;
     string _year;
@@ -26,7 +26,7 @@ public:
     double getmaxspeed();
     double brake(double kmh);
     double acceleration(double kmh);
-    void showinfos();
+    virtual void showinfos();
 };
 
 #endif

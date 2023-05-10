@@ -11,11 +11,13 @@ using namespace std;
 
 class ecar : public Car {
 public:
-    ecar(string brand, string model, int year, double maxspeed, ,double maxcapacity, double capacitynow, double effizenz);
+    ecar(string brand, string model, int year, double maxspeed, double maxcapacity, double capacitynow, double effizenz);
     ~ecar();
     double getrange();
     double getcurrentcapacity();
     double getmaxcapacity();
+    void showinfos() override;
+
 private:
    double _capacitynow;
    double _maxcapacity;
@@ -23,10 +25,10 @@ private:
 };
 
 
-ecar::ecar(string brand, string model, int year, double maxspeed, ,double maxcapacity, double capacitynow, double effizenz) : Car(brand, model, year, maxspeed) {
+ecar::ecar(string brand, string model, int year, double maxspeed,double maxcapacity, double capacitynow, double effizenz) : Car(brand, model, year, maxspeed) {
     _maxcapacity = maxcapacity;
     _capacitynow = capacitynow;
-    _effizenz = effizenz
+    _effizenz = effizenz;
 }
 
 ecar::~ecar() {}
@@ -43,5 +45,17 @@ double ecar::getmaxcapacity() {
     return _maxcapacity;
 }
 
+void ecar::showinfos() {
+    cout << "Brand: " << _brand << endl;
+    cout << "Model: " << _model << endl;
+    cout << "Year: " << _year << endl;
+    cout << "Speednow: " << Car::_speednow<< endl;
+    cout << "Max Speed: " << Car::_maxspeed << endl;
+    cout << "Serienummer: " << Car::_serialnumber << endl;
+    cout << "Max Kapazität: " << _maxcapacity << endl;
+    cout << "Akutelle Kapazität: " << _capacitynow << endl;
+    cout << "Effizenz: " << _effizenz << endl;
+    cout << "Reichweite: " << ecar::getrange() << endl;
 
+}
 #endif //CAR_ELEKTRICCAR_H
