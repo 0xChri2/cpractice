@@ -3,4 +3,4 @@ project(stackincplusplus)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(stackincplusplus main.cpp stack.cpp stack.h)
+add_executable(stackincplusplus main.cpp stackcom.h)

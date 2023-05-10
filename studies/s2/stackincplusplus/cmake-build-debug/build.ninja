@@ -52,12 +52,6 @@ build CMakeFiles/stackincplusplus.dir/main.cpp.o: CXX_COMPILER__stackincplusplus
   OBJECT_DIR = CMakeFiles/stackincplusplus.dir
   OBJECT_FILE_DIR = CMakeFiles/stackincplusplus.dir
 
-build CMakeFiles/stackincplusplus.dir/stack.cpp.o: CXX_COMPILER__stackincplusplus_Debug /Users/christophriedel/Programming/cpractice/studies/s2/stackincplusplus/stack.cpp || cmake_object_order_depends_target_stackincplusplus
-  DEP_FILE = CMakeFiles/stackincplusplus.dir/stack.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -std=gnu++17
-  OBJECT_DIR = CMakeFiles/stackincplusplus.dir
-  OBJECT_FILE_DIR = CMakeFiles/stackincplusplus.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target stackincplusplus
@@ -66,7 +60,7 @@ build CMakeFiles/stackincplusplus.dir/stack.cpp.o: CXX_COMPILER__stackincplusplu
 #############################################
 # Link the executable stackincplusplus
 
-build stackincplusplus: CXX_EXECUTABLE_LINKER__stackincplusplus_Debug CMakeFiles/stackincplusplus.dir/main.cpp.o CMakeFiles/stackincplusplus.dir/stack.cpp.o
+build stackincplusplus: CXX_EXECUTABLE_LINKER__stackincplusplus_Debug CMakeFiles/stackincplusplus.dir/main.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
   OBJECT_DIR = CMakeFiles/stackincplusplus.dir
   POST_BUILD = :

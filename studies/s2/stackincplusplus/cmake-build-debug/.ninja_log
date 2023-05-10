@@ -1,8 +1,7 @@
 # ninja log v5
-0	54	1683709972946624374	build.ninja	b05e6ac8fcd31bab
-6	403	1683709822901503261	CMakeFiles/stackincplusplus.dir/main.cpp.o	a9104063e0a50061
-7	173	1683709822670917078	CMakeFiles/stackincplusplus.dir/stack.cpp.o	8b934876f394b8bc
-422	465	1681754607059417781	stackincplusplus	a6fce4f4011fd6c1
-0	50	1683709972946624374	build.ninja	b05e6ac8fcd31bab
-5	353	1683709973303650783	CMakeFiles/stackincplusplus.dir/stack.cpp.o	8b934876f394b8bc
+0	54	1683711465128976591	build.ninja	b05e6ac8fcd31bab
+5	451	1683711430215060722	CMakeFiles/stackincplusplus.dir/main.cpp.o	a9104063e0a50061
 6	482	1683710140224195450	CMakeFiles/stackincplusplus.dir/stack.cpp.o	8b934876f394b8bc
+451	495	1683711430261158116	stackincplusplus	a6fce4f4011fd6c1
+0	69	1683711465128976591	build.ninja	b05e6ac8fcd31bab
+10	123	1683711465257830460	stackincplusplus	98bb50e5b4b10ac1

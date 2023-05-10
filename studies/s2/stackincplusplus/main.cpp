@@ -1,5 +1,5 @@
 #include <iostream>
-#include "stack.h"
+#include "stackcom.h"
 
 using namespace std;
 
