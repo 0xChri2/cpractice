@@ -1,0 +1,3 @@
+/Users/christophriedel/Programming/cpractice/studies/s2/worker/cmake-build-debug/CMakeFiles/worker.dir
+/Users/christophriedel/Programming/cpractice/studies/s2/worker/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/christophriedel/Programming/cpractice/studies/s2/worker/cmake-build-debug/CMakeFiles/rebuild_cache.dir
