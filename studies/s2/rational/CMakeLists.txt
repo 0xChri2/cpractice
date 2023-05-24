@@ -3,4 +3,4 @@ project(rational)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(rational main.cpp rational.cpp rational.h)
+add_executable(rational main.cpp rational.cpp rational.h extrational.h)

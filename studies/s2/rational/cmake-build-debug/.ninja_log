@@ -1,0 +1,4 @@
+# ninja log v5
+1	530	1684917419589740598	CMakeFiles/rational.dir/rational.cpp.o	ccf3ffde6efcaadf
+10	416	1684918073957338724	CMakeFiles/rational.dir/main.cpp.o	c65db14f2653a56b
+416	576	1684918074119385736	rational	200c3fe807b19b5d
