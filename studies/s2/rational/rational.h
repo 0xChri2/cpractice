@@ -37,6 +37,7 @@ public:
 
     int getZaehler() const;
     int getNenner() const;
+    double value() const;
 };
 
 #endif //V05_RATIONAL_RATIONAL_H

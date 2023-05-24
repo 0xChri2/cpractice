@@ -95,3 +95,7 @@ bool Rational::operator ==(const Rational& x) const {
 bool Rational::operator <=(const Rational& x) const {
     return * this < x || * this == x ;
 }
+
+double Rational::value() const {
+    return (double) (zaehler / nenner);
+}
