@@ -30,7 +30,7 @@ int main (void) {
     cout << "c.zaehler = " << c.getZaehler () << endl ;
     cout << "c.nenner = " << c.getNenner () << endl ;
 
-    extrational d (2) , e (1 , 3) , f ;
+    extrational d (2.0) , e (1.0 , 3.0) , f ;
 
     f = d + e;
     cout << " d + e = " << f << endl ;

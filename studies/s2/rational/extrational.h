@@ -11,6 +11,7 @@ public:
     extrational(double z = 1, double n = 1){
         zaehler = z;
         nenner = n;
+        kuerzen();
     }
     ~extrational(){}
     double getZaehler() const{
@@ -76,6 +77,11 @@ public:
 
     extrational operator /(const extrational & x) const {
         return div(x);
+    }
+    friend std::ostream &operator<<(std::ostream &os,
+                                    const extrational &x) {
+        os << x.zaehler << " / " << x.nenner;
+        return os;
     }
 };
 
