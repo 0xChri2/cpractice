@@ -95,7 +95,8 @@
 			"sourceIndexes" : 
 			[
 				2,
-				3
+				3,
+				4
 			]
 		}
 	],
@@ -121,6 +122,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "elektriccar.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "vehicle.h",
 			"sourceGroupIndex" : 1
 		}
 	],

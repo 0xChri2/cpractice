@@ -3,4 +3,4 @@ project(car)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(car main.cpp car.cpp car.h elektriccar.h)
+add_executable(car main.cpp car.cpp car.h elektriccar.h vehicle.h)
