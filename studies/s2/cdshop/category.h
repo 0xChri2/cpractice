@@ -2,12 +2,14 @@
 #define CDSHOP_CATEGORY_H
 
 class category{
+protected:
     int _baseprice;
     int _loanlen;
     int _penaltyfee;
-    category();
+public:
+    category(int baseprice, int loanlen, int penaltyfee);
     ~category();
-    virtual int price(int days);
+    virtual int price(int days) = 0;
 };
 
 #endif //CDSHOP_CATEGORY_H

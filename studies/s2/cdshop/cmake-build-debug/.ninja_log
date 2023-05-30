@@ -1,0 +1,18 @@
+# ninja log v5
+1	230	1685432716078945988	CMakeFiles/cdshop.dir/category.cpp.o	ffa5f71e6f20a890
+1	230	1685432716078914781	CMakeFiles/cdshop.dir/normal.cpp.o	1a8c95b3de2fe580
+2	231	1685432716079470135	CMakeFiles/cdshop.dir/offer.cpp.o	8cc0557a1e9fe284
+1	231	1685432716079011277	CMakeFiles/cdshop.dir/bestseller.cpp.o	e95ddaaf41f37b64
+0	487	1685432716335232563	CMakeFiles/cdshop.dir/main.cpp.o	32cd8e03341ce5e
+5	151	1685432766015532348	CMakeFiles/cdshop.dir/bestseller.cpp.o	e95ddaaf41f37b64
+6	151	1685432766016279904	CMakeFiles/cdshop.dir/offer.cpp.o	8cc0557a1e9fe284
+5	151	1685432766015746007	CMakeFiles/cdshop.dir/normal.cpp.o	1a8c95b3de2fe580
+5	418	1685432766282854654	CMakeFiles/cdshop.dir/main.cpp.o	32cd8e03341ce5e
+7	178	1685432898590534902	CMakeFiles/cdshop.dir/offer.cpp.o	8cc0557a1e9fe284
+7	178	1685432898590329618	CMakeFiles/cdshop.dir/category.cpp.o	ffa5f71e6f20a890
+7	178	1685432898590272161	CMakeFiles/cdshop.dir/normal.cpp.o	1a8c95b3de2fe580
+7	178	1685432898590269495	CMakeFiles/cdshop.dir/bestseller.cpp.o	e95ddaaf41f37b64
+6	448	1685432898856851748	CMakeFiles/cdshop.dir/main.cpp.o	32cd8e03341ce5e
+449	515	1685432898928635643	cdshop	9921ad146bd04430
+5	416	1685432930756146846	CMakeFiles/cdshop.dir/main.cpp.o	32cd8e03341ce5e
+416	459	1685432930801399010	cdshop	9921ad146bd04430

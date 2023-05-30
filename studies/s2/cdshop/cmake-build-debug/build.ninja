@@ -58,6 +58,24 @@ build CMakeFiles/cdshop.dir/category.cpp.o: CXX_COMPILER__cdshop_Debug /Users/ch
   OBJECT_DIR = CMakeFiles/cdshop.dir
   OBJECT_FILE_DIR = CMakeFiles/cdshop.dir
 
+build CMakeFiles/cdshop.dir/normal.cpp.o: CXX_COMPILER__cdshop_Debug /Users/christophriedel/Programming/cpractice/studies/s2/cdshop/normal.cpp || cmake_object_order_depends_target_cdshop
+  DEP_FILE = CMakeFiles/cdshop.dir/normal.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/cdshop.dir
+  OBJECT_FILE_DIR = CMakeFiles/cdshop.dir
+
+build CMakeFiles/cdshop.dir/bestseller.cpp.o: CXX_COMPILER__cdshop_Debug /Users/christophriedel/Programming/cpractice/studies/s2/cdshop/bestseller.cpp || cmake_object_order_depends_target_cdshop
+  DEP_FILE = CMakeFiles/cdshop.dir/bestseller.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/cdshop.dir
+  OBJECT_FILE_DIR = CMakeFiles/cdshop.dir
+
+build CMakeFiles/cdshop.dir/offer.cpp.o: CXX_COMPILER__cdshop_Debug /Users/christophriedel/Programming/cpractice/studies/s2/cdshop/offer.cpp || cmake_object_order_depends_target_cdshop
+  DEP_FILE = CMakeFiles/cdshop.dir/offer.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/cdshop.dir
+  OBJECT_FILE_DIR = CMakeFiles/cdshop.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target cdshop
@@ -66,7 +84,7 @@ build CMakeFiles/cdshop.dir/category.cpp.o: CXX_COMPILER__cdshop_Debug /Users/ch
 #############################################
 # Link the executable cdshop
 
-build cdshop: CXX_EXECUTABLE_LINKER__cdshop_Debug CMakeFiles/cdshop.dir/main.cpp.o CMakeFiles/cdshop.dir/category.cpp.o
+build cdshop: CXX_EXECUTABLE_LINKER__cdshop_Debug CMakeFiles/cdshop.dir/main.cpp.o CMakeFiles/cdshop.dir/category.cpp.o CMakeFiles/cdshop.dir/normal.cpp.o CMakeFiles/cdshop.dir/bestseller.cpp.o CMakeFiles/cdshop.dir/offer.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
   OBJECT_DIR = CMakeFiles/cdshop.dir
   POST_BUILD = :
