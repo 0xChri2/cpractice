@@ -1,0 +1,5 @@
+
+#ifndef CDRENTAL_KUNDE_H
+#define CDRENTAL_KUNDE_H
+
+#endif //CDRENTAL_KUNDE_H
