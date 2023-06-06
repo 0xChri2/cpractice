@@ -2,6 +2,7 @@
 #include "cd.h"
 #include "category.h"
 #include "date.h"
+#include "kunde.h"
 
 #ifndef CDRENTAL_VERLEIH_H
 #define CDRENTAL_VERLEIH_H
