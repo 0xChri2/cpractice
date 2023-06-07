@@ -11,5 +11,6 @@ private:
 public:
     date(int tag, int monat, int jahr) : _tag(tag), _monat(monat), _jahr(jahr) {}
     int diff(date& other);
+    void settodays();
 };
 #endif //BANK_DATE_H

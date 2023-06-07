@@ -1,7 +1,10 @@
 #include <iostream>
 #include "verleih.h"
-#include "cd.h"
 #include "kunde.h"
+#include "cd.h"
+#include "date.h"
+
+
 using namespace std;
 
 // *******************************************************************
@@ -50,20 +53,46 @@ int stammdaten() {
 
 // *******************************************************************
 int main() {
-    int auswahl, cd, kunde;
+    int auswahl, cdm, kund;
     string str, datum;
-    Verleih verleih;
 
+    date today(1,1,1900);
+    today.settodays();
+
+    kunde kunde1("Wolfgang");
+    cd cd1("Nix","nix",today, false);
+    verleih verleih(&cd1, &kunde1, 0, 0);
     do {
         auswahl = menue();
-        if (auswahl == 1) {         // CD verleihen
-            // to do ...
+        if (auswahl == 1) { // CD verleihen
+            int cdIndex;
+            cout << "Welche CD möchten Sie verleihen? (Index eingeben): ";
+            cin >> cdIndex;
+
+            if (cdIndex >= 0 && cdIndex < 10) {
+                int kundeIndex;
+                cout << "An welchen Kunden möchten Sie die CD verleihen? (Index eingeben): ";
+                cin >> kundeIndex;
+
+                if (kundeIndex >= 0 && kundeIndex < 10) {
+                    verleih.hinzuCD(*cds[cdIndex]);
+
+                    verleih.hinzuKunde(, kundeIndex);
+                } else {
+                    cout << "Ungültiger Kundenindex!" << endl;
+                }
+            } else {
+                cout << "Ungültiger CD-Index!" << endl;
+            }
         } else if (auswahl == 2) {  // CD annehmen
-            // to do ...
+            cout << "Geben Sie den Index Ihrer CD ein.";
         } else if (auswahl == 3) {  // Kundenliste anzeigen
-            // to do ...
+            cout << verleih.gibKundenliste() << endl;
         } else if (auswahl == 4) {  // Kundenausleihe anzeigen
-            // to do ...
+            cout << "Welcher Kunde für die Ausgeliehen CDs soll ausgegeben werden.";
+            int kundenIndex;
+            cin >> kundenIndex;
+            cout << verleih.gibAusleiheVon(kundenIndex) << endl;
         } else if (auswahl == 5) {  // CD-Liste anzeigen
             // to do ...
         } else if (auswahl == 6) {  // Stammdaten-Dialog

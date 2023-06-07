@@ -1,0 +1,15 @@
+# ninja log v5
+1	257	1686128734357050190	CMakeFiles/cdrental.dir/kunde.cpp.o	6fe82b4da24cc292
+0	273	1686128734375350219	CMakeFiles/cdrental.dir/date.cpp.o	d0ba339275abb3cc
+2	274	1686128734376419905	CMakeFiles/cdrental.dir/normal.cpp.o	9b7d5e9ffb38706d
+2	276	1686128734376697066	CMakeFiles/cdrental.dir/offer.cpp.o	6d805ced0f5b00b5
+257	297	1686128734398904179	CMakeFiles/cdrental.dir/category.cpp.o	736843c88f7679a2
+273	304	1686128734407160921	CMakeFiles/cdrental.dir/bestseller.cpp.o	3ad4dcbe00707591
+274	725	1686128734827024950	CMakeFiles/cdrental.dir/cd.cpp.o	37bc07d29283c2ed
+11	571	1686134644501590276	CMakeFiles/cdrental.dir/cd.cpp.o	37bc07d29283c2ed
+11	572	1686134644501010748	CMakeFiles/cdrental.dir/verleih.cpp.o	28c5989bc15c9277
+10	585	1686134644515813233	CMakeFiles/cdrental.dir/main.cpp.o	31f882801a4c6321
+5	162	1686134654297037116	CMakeFiles/cdrental.dir/date.cpp.o	d0ba339275abb3cc
+7	547	1686134698739136854	CMakeFiles/cdrental.dir/verleih.cpp.o	28c5989bc15c9277
+6	697	1686134733978985702	CMakeFiles/cdrental.dir/verleih.cpp.o	28c5989bc15c9277
+697	760	1686134734045585800	cdrental	85a1e4a62600f822
