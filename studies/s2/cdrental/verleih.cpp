@@ -27,6 +27,7 @@ void verleih::hinzuKunde(kunde& k, int kundennr) {
 
 string * verleih::gibKundenliste(){
 
+
 }
 string * verleih::gibAusleiheVon(int kunde){
 
