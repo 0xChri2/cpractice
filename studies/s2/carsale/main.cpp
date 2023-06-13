@@ -1,7 +1,26 @@
 #include <iostream>
 #include "sale.h"
+#include <iostream>
+#include <fstream>
+#include <map>
+#include <string>
 
 using namespace std;
+
+map<string, sale> extract(const string& filename){
+    map<string, sale> data;
+
+    ifstream file(filename);
+    if(!file){
+        cerr << "Fehler beim Öffnen der Datei" << endl;
+        return data;
+    }
+    string key;
+    
+
+
+}
+
 
 int main() {
     int count = 0;

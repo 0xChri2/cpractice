@@ -16,7 +16,6 @@ public:
     List() : head(nullptr){}
     void insert(int value){
         Node* newNode = new Node(value);
-
         if (head == nullptr) {
             head = newNode;
         } else {
