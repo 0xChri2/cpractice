@@ -9,6 +9,7 @@ class sale{
         int _date;
         int _sales;
     public:
+        sale();
         sale(int date,string car, int sales) : _date(date), _car(car), _sales(sales){};
         ~sale();
         string getcar();

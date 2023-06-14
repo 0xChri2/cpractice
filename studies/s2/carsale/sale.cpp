@@ -4,10 +4,11 @@
 
 using namespace std;
 
-/*sale::sale(int date, string car,  int sales){
-    _car = car;
-    _date = date;
-}*/
+sale::sale(){
+    _date = 0;
+    _car = "";
+    _sales = 0;
+}
 sale::~sale(){
 
 }
