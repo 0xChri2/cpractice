@@ -18,7 +18,7 @@ map<int, sale> extract(const string filename){
     } else {
         string line;
         while (getline(file, line)) {
-            std::istringstream iss(line);
+            istringstream iss(line);
             string car;
             int date, sales;
             if (iss >> date >> car >> sales) {
