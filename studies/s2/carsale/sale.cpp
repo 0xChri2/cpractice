@@ -4,11 +4,10 @@
 
 using namespace std;
 
-sale::sale(int date, string car,  int sales){
+/*sale::sale(int date, string car,  int sales){
     _car = car;
     _date = date;
-    _sales = sales;
-}
+}*/
 sale::~sale(){
 
 }
@@ -27,6 +26,6 @@ int sale::getdate() {
 
 string sale::tostring() {
     ostringstream car;
-    car << "Datum: " << _date << ", Marke: " << _car << ", Anzahl: " << _sales;
+    car << "Datum: " << _date << ", Marke: " << _car << ", Anzahl: " << _sales << endl;
     return car.str();
 }

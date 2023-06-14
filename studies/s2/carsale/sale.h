@@ -9,7 +9,7 @@ class sale{
         int _date;
         int _sales;
     public:
-        sale(int date,string car,  int sales);
+        sale(int date,string car, int sales) : _date(date), _car(car), _sales(sales){};
         ~sale();
         string getcar();
         int getdate();
@@ -17,7 +17,7 @@ class sale{
         string tostring();
 
 };
-class FileExtractor{
+/*class FileExtractor{
     public:
         FileExtractor();
         ~FileExtractor();
@@ -27,6 +27,6 @@ class FileExtractor{
 
 
 
-};
+};*/
 
 #endif //CARSALE_SALE_H
