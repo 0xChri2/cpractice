@@ -6,17 +6,25 @@ using namespace std;
 
 class token{
 private:
-    string _delimiter, _input;
+    string _input;
+    char _delimiter;
 
 public:
-    token(string input, string delimiter){
+    token(string input, char delimiter){
         _delimiter = delimiter;
         _input = input;
     }
     ~token(){
 
     }
-    string strtotoken()
+    string strtotoken(){
+
+        for(int i = 0; i<= _input.length();i++){
+            if(_input[i] == _delimiter){
+
+            }
+        }
+    };
 };
 
 
