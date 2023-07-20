@@ -30,7 +30,7 @@ public:
         return result;
     };
     time_t newmktime(){
-        
+
     };
 };
 
