@@ -71,6 +71,7 @@ KeineMuenzeZustand* KeineMuenzeZustand::getInstance() {
 
 void KeineMuenzeZustand::muenzeEinwerfen(Automat *a) {
     cout << "Münze wurde eingeworfen." << endl;
+    setState(a);
 }
 
 void KeineMuenzeZustand::ausgeben(Automat *a) {
